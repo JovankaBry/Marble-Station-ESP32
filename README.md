@@ -8,5 +8,7 @@ Bluetooth-based remote control
 
 # Features
 -Automatic marble release (e.g., one marble per second)
+
 -Modular station architecture with multiple containers
+
 -3D-printed mechanical parts for the station setup
