@@ -14,10 +14,10 @@ void app_main(void)
     while(1){
     float angle = 0.0f;
     servo_set_angle(angle);
-    vTaskDelay(pdMS_TO_TICKS(500));
+    vTaskDelay(pdMS_TO_TICKS(1500));
 
     angle = 180.0f;
     servo_set_angle(angle);
-    vTaskDelay(pdMS_TO_TICKS(500));
+    vTaskDelay(pdMS_TO_TICKS(1500));
     }
 }

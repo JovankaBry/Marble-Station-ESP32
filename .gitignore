@@ -1,0 +1,9 @@
+# Ignore Altium project generated folders
+pcb/Altium/DC_Jack_8_Output/Project_Jack_DC/History/
+pcb/Altium/DC_Jack_8_Output/Project_Jack_DC/Project Outputs/
+pcb/Altium/DC_Jack_8_Output/Project_Jack_DC/Project Logs for Project_Jack_DC/
+
+*.PrjPcbStructure
+*.Zip
+*.SchDocPreview
+*.htm
