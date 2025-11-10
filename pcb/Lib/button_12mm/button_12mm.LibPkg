@@ -5,7 +5,7 @@ ChannelRoomNamingStyle=0
 ReleasesFolder=
 ChannelDesignatorFormatString=$Component_$RoomName
 ChannelRoomLevelSeperator=_
-OpenOutputs=1
+OpenOutputs=0
 ArchiveProject=0
 TimestampOutput=0
 SeparateFolders=0
@@ -16,14 +16,14 @@ AllowPortNetNames=0
 AllowSheetEntryNetNames=1
 AppendSheetNumberToLocalNets=0
 NetlistSinglePinNets=0
-DefaultConfiguration=Sources
+DefaultConfiguration=Default - All Constraints
 UserID=0xFFFFFFFF
 DefaultPcbProtel=1
 DefaultPcbPcad=0
 ReorderDocumentsOnCompile=1
 NameNetsHierarchically=0
 PowerPortNamesTakePriority=0
-AutoSheetNumbering=1
+AutoSheetNumbering=0
 AutoCrossReferences=1
 NewIndexingOfSheetSymbols=1
 PushECOToAnnotationFile=1
@@ -34,11 +34,11 @@ FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
 ConstraintManagerFlow=0
 IsVirtualBomDocumentRemoved=0
-OutputPath=
+OutputPath=.
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
-CrossRefSheetStyle=1
+CrossRefSheetStyle=2
 CrossRefLocationStyle=1
 CrossRefPorts=3
 CrossRefCrossSheets=1
@@ -50,41 +50,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=Sch_Master_Screen.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=0
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=ZDGRCBAL
-
-[Document2]
-DocumentPath=PCB_Master_Screen.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=IPYSLWSI
-
-[Document3]
-DocumentPath=..\..\..\Library\MarbleLib.DbLib
+DocumentPath=button_12mm.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -100,15 +66,29 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Configuration1]
-Name=Sources
-ParameterCount=0
-ConstraintFileCount=0
-ReleaseItemId=
-Variant=[No Variations]
-OutputJobsCount=0
-ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
-ConfigurationType=Source
+[Document2]
+DocumentPath=button_12mm.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Parameter1]
+Name=Copied from the Vault
+Value=Altium Content Vault
+
+[Generic_EDE]
+OutputDir=.
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -1082,78 +1062,6 @@ SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
-ComponentLibIdentifierKind0=Library Name And Type
-ComponentLibraryIdentifier0=1N5819HW-7-F.IntLib
-ComponentDesignItemID0=1N5819HW-7-F
-ComponentSymbolReference0=1N5819HW-7-F
-ComponentUpdate0=1
-ComponentIsDeviceSheet0=0
-ComponentLibIdentifierKind1=Library Name And Type
-ComponentLibraryIdentifier1=BSS84W-7-F.IntLib
-ComponentDesignItemID1=BSS84W-7-F
-ComponentSymbolReference1=BSS84W-7-F
-ComponentUpdate1=1
-ComponentIsDeviceSheet1=0
-ComponentLibIdentifierKind2=Library Name And Type
-ComponentLibraryIdentifier2=SK12D07VG4.IntLib
-ComponentDesignItemID2=SK12D07VG4
-ComponentSymbolReference2=SK12D07VG4
-ComponentUpdate2=1
-ComponentIsDeviceSheet2=0
-ComponentLibIdentifierKind3=Library Name And Type
-ComponentLibraryIdentifier3=TP4056.IntLib
-ComponentDesignItemID3=TP4056
-ComponentSymbolReference3=TP4056
-ComponentUpdate3=1
-ComponentIsDeviceSheet3=0
-ComponentLibIdentifierKind4=Vault Name
-ComponentLibraryIdentifier4=Altium Content Vault
-ComponentDesignItemID4=CMP-02766-001723-1
-ComponentSymbolReference4=de2cdd76613f87adcba81301aaab7e9
-ComponentUpdate4=1
-ComponentIsDeviceSheet4=0
-ComponentLibIdentifierKind5=Vault Name
-ComponentLibraryIdentifier5=Altium Content Vault
-ComponentDesignItemID5=CMP-1036-04402-6
-ComponentSymbolReference5=11868f565c42a9108669ba33697ecf6
-ComponentUpdate5=1
-ComponentIsDeviceSheet5=0
-ComponentLibIdentifierKind6=Vault Name
-ComponentLibraryIdentifier6=Altium Content Vault
-ComponentDesignItemID6=CMP-2000-05062-1
-ComponentSymbolReference6=LED_GREEN_A1K2-2
-ComponentUpdate6=1
-ComponentIsDeviceSheet6=0
-ComponentLibIdentifierKind7=Vault Name
-ComponentLibraryIdentifier7=Altium Content Vault
-ComponentDesignItemID7=CMP-2000-05888-3
-ComponentSymbolReference7=3bc925449376181038e59eaffc5286c
-ComponentUpdate7=1
-ComponentIsDeviceSheet7=0
-ComponentLibIdentifierKind8=Vault Name
-ComponentLibraryIdentifier8=Altium Content Vault
-ComponentDesignItemID8=CMP-2000-07123-1
-ComponentSymbolReference8=LED-RED-AK-2
-ComponentUpdate8=1
-ComponentIsDeviceSheet8=0
-ComponentLibIdentifierKind9=Vault Name
-ComponentLibraryIdentifier9=Altium Content Vault
-ComponentDesignItemID9=CMP-209535-000001-1
-ComponentSymbolReference9=8bdbb5f8e77002000e30dd2845d0354
-ComponentUpdate9=1
-ComponentIsDeviceSheet9=0
-ComponentLibIdentifierKind10=Vault Name
-ComponentLibraryIdentifier10=Altium Content Vault
-ComponentDesignItemID10=CMP-2100-03681-2
-ComponentSymbolReference10=1029c3af85768c4190bb7ad29bc67b5
-ComponentUpdate10=1
-ComponentIsDeviceSheet10=0
-ComponentLibIdentifierKind11=Vault Name
-ComponentLibraryIdentifier11=Altium Content Vault
-ComponentDesignItemID11=CMP-245163-000004-1
-ComponentSymbolReference11=a055484d46e58b234844902c9fd883a
-ComponentUpdate11=1
-ComponentIsDeviceSheet11=0
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
@@ -1162,7 +1070,4 @@ ComparisonOptions2=Kind=Component Class|MinPercent=75|MinMatch=3|ShowMatch=0|Use
 ComparisonOptions3=Kind=Rule|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
 ComparisonOptions4=Kind=Differential Pair|MinPercent=50|MinMatch=1|ShowMatch=0|UseName=0|InclAllRules=0
 ComparisonOptions5=Kind=Structure Class|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
-
-[SmartPDF]
-PageOptions=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
