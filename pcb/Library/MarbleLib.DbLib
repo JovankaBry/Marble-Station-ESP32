@@ -26,20 +26,15 @@ TableName=Components$
 Enabled=True
 UserWhere=0
 UserWhereText=
-BrowserOrder_Sorting=
-BrowserOrder_Grouping=
-BrowserOrder_Visible=Footprint Path0=103|Symbol Path0=86|Description0=227|Library Ref0=77|Footprint Ref0=92|Part Number0=87|PartID0=54|Value0=75|TempMin0=70|TempMax0=71|Link0=387
 [FieldMap1]
 Options=FieldName=Components$.Footprint Path|TableNameOnly=Components$|FieldNameOnly=Footprint Path|FieldType=1|ParameterName=[Footprint Path]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
 [FieldMap2]
-Options=FieldName=Components$.Symbol Path|TableNameOnly=Components$|FieldNameOnly=Symbol Path|FieldType=1|ParameterName=[Symbol Path]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
-[FieldMap3]
 Options=FieldName=Components$.Description|TableNameOnly=Components$|FieldNameOnly=Description|FieldType=1|ParameterName=[Description]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
-[FieldMap4]
+[FieldMap3]
 Options=FieldName=Components$.Library Ref|TableNameOnly=Components$|FieldNameOnly=Library Ref|FieldType=1|ParameterName=[Library Ref]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
-[FieldMap5]
+[FieldMap4]
 Options=FieldName=Components$.Footprint Ref|TableNameOnly=Components$|FieldNameOnly=Footprint Ref|FieldType=1|ParameterName=[Footprint Ref]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
-[FieldMap6]
+[FieldMap5]
 Options=FieldName=Components$.Part Number|TableNameOnly=Components$|FieldNameOnly=Part Number|FieldType=0|ParameterName=Part Number|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
-[FieldMap7]
+[FieldMap6]
 Options=FieldName=Components$.Library Path|TableNameOnly=Components$|FieldNameOnly=Library Path|FieldType=1|ParameterName=[Library Path]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
