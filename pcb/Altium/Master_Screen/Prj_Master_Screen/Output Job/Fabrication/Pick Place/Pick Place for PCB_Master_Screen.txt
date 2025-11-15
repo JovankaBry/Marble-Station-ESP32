@@ -1,0 +1,56 @@
+Altium Designer Pick and Place Locations
+C:\Users\Ruben\Documents\Git\Marble-Station-ESP32\pcb\Altium\Master_Screen\Prj_Master_Screen\Output Job\Fabrication\Pick Place\Pick Place for PCB_Master_Screen.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       15.11.25
+Time:       14:34
+Revision:   3c14dd165904be62189e42cf73e1067e69422caa
+Variant:    No variations
+Units used: mil
+
+Designator Comment            Layer       Footprint                Center-X(mil) Center-Y(mil) Rotation Description                                                                                              
+J2         SK12D07VG4         TopLayer    SK12D07VG4               2626.260      3005.000      180      "Slide Switches - Side Knob"                                                                             
+DS1        "Green LED"        TopLayer    LUMX-SML-LX1206IC_V      4285.000      2420.000      180      "LED Red, 65 mW, -40 to 85 degC, 2-Pin SMD, RoHS, Tape and Reel"                                         
+DS4        "Green LED"        TopLayer    LUMX-SML-LX1206IC_V      2630.000      2515.000      180      "LED Red, 65 mW, -40 to 85 degC, 2-Pin SMD, RoHS, Tape and Reel"                                         
+DS2        "Red LED"          TopLayer    LUMX-SML-LX1206IC_V      4285.000      2650.000      180      "LED Red, 65 mW, -40 to 85 degC, 2-Pin SMD, RoHS, Tape and Reel"                                         
+R10        330R               TopLayer    FP-RC1206-MFG            2630.000      2685.000      270      "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
+C14        10uF               TopLayer    FP-CC0805-0_85-MFG       3580.000      2650.000      90       "CAP CER 0.1UF 16V X7R 0805"                                                                             
+C13        100nF              TopLayer    FP-CC0805-0_85-MFG       3675.000      2650.000      270      "CAP CER 0.1UF 16V X7R 0805"                                                                             
+C12        10uF               TopLayer    FP-CC0805-0_85-MFG       2030.000      1255.000      180      "CAP CER 0.1UF 16V X7R 0805"                                                                             
+C11        100nF              TopLayer    FP-CC0805-0_85-MFG       2030.000      1155.000      0        "CAP CER 0.1UF 16V X7R 0805"                                                                             
+C10        100nF              TopLayer    FP-CC0805-0_85-MFG       2915.000      3045.000      180      "CAP CER 0.1UF 16V X7R 0805"                                                                             
+C9         10uF               TopLayer    FP-CC0805-0_85-MFG       2915.000      2945.000      0        "CAP CER 0.1UF 16V X7R 0805"                                                                             
+J1         ST7735             TopLayer    ST7735                   2175.000      890.000       270      "1.8 inches 128x160 RGB TFT LCD - ST7735 DRIVER"                                                         
+U3         ESP32-DEVKIT-V1    TopLayer    MODULE_ESP32_DEVKIT_V1   1015.000      2320.000      90       "ESP32-DEVKIT-V1 30 Pins"                                                                                
+U2         AMS1117-3.3        TopLayer    FP-AMS1117-IPC_C         2660.000      2140.000      90       "LDO Voltage Regulators 1A, 3.3V"                                                                        
+U1         TP4056             TopLayer    SOP8-PP_TPW              3770.000      2110.000      0        "charger for single cell lithium-ion batteries"                                                          
+SW5        MJTP1212A          TopLayer    FP-MJTP1212A-MFG         3370.000      984.134       0        "Switch Tactile Button 12x12mm"                                                                          
+SW4        MJTP1212A          TopLayer    FP-MJTP1212A-MFG         4070.000      984.134       0        "Switch Tactile Button 12x12mm"                                                                          
+SW3        MJTP1212A          TopLayer    FP-MJTP1212A-MFG         3370.000      1580.000      0        "Switch Tactile Button 12x12mm"                                                                          
+SW2        MJTP1212A          TopLayer    FP-MJTP1212A-MFG         3375.000      390.000       0        "Switch Tactile Button 12x12mm"                                                                          
+SW1        MJTP1212A          TopLayer    FP-MJTP1212A-MFG         2655.000      984.134       0        "Switch Tactile Button 12x12mm"                                                                          
+R9         330R               TopLayer    FP-RC1206-MFG            2485.000      1860.000      270      "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
+R8         1k                 TopLayer    FP-RC1206-MFG            3455.000      2205.000      0        "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
+R7         100R               TopLayer    FP-RC1206-MFG            3755.000      1910.000      180      "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
+R6         100k               TopLayer    FP-RC1206-MFG            4055.000      2650.000      0        "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
+R5         1k                 TopLayer    FP-RC1206-MFG            4060.000      2420.000      180      "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
+R4         1k                 TopLayer    FP-RC1206-MFG            4060.000      2530.000      180      "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
+R3         1M                 TopLayer    FP-RC1206-MFG            3290.000      2945.000      0        "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
+R2         5.1k               TopLayer    FP-RC1206-MFG            3335.000      2670.000      90       "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
+R1         5.1k               TopLayer    FP-RC1206-MFG            3430.000      2670.000      90       "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
+Q1         BSS84W-7-F         TopLayer    SOT65P222X110-3N         3845.000      1805.000      0        "MOSFET P-Channel 50V 130MA SOT323"                                                                      
+P1         S2B-PH-K-S(LF)(SN) BottomLayer JST-S2B-PH-K-S_V         4355.000      1949.370      90       "Male Header, Pitch 2 mm, 1 x 2 Position, Height 4.8 mm, Tail Length 3.4 mm, -25 to 85 degC, RoHS, Bulk" 
+J3         USB4125-GF-A-0190  TopLayer    FP-USB4125-GF-A-0190-MFG 3595.000      2916.693      180      "CONN RCPT TYPE C 6P SMD RA"                                                                             
+DS3        "Red LED"          TopLayer    LUMX-SML-LX1206IC_V      2650.000      1405.000      0        "LED Red, 65 mW, -40 to 85 degC, 2-Pin SMD, RoHS, Tape and Reel"                                         
+D2         1N5819HW-7-F       TopLayer    SOD3715X145N             3440.000      2065.000      0        "Schottky Diodes & Rectifiers SOD-123"                                                                   
+D1         1N5819HW-7-F       TopLayer    SOD3715X145N             3775.000      2625.000      90       "Schottky Diodes & Rectifiers SOD-123"                                                                   
+C8         10uF               BottomLayer FP-CC0805-0_85-MFG       4165.000      2150.000      270      "CAP CER 0.1UF 16V X7R 0805"                                                                             
+C7         100nF              TopLayer    FP-CC0805-0_85-MFG       2805.000      1860.000      90       "CAP CER 0.1UF 16V X7R 0805"                                                                             
+C6         10uF               TopLayer    FP-CC0805-0_85-MFG       2650.000      1860.000      90       "CAP CER 0.1UF 16V X7R 0805"                                                                             
+C5         100nF              TopLayer    FP-CC0805-0_85-MFG       2905.000      2150.000      180      "CAP CER 0.1UF 16V X7R 0805"                                                                             
+C4         100nF              BottomLayer FP-CC0805-0_85-MFG       4355.000      2150.000      90       "CAP CER 0.1UF 16V X7R 0805"                                                                             
+C3         10uF               TopLayer    FP-CC0805-0_85-MFG       2905.000      2045.000      180      "CAP CER 0.1UF 16V X7R 0805"                                                                             
+C2         1nF                TopLayer    FP-CC0805-0_85-MFG       3875.000      3010.000      0        "CAP CER 0.1UF 16V X7R 0805"                                                                             
+C1         100nF              TopLayer    FP-CC0805-0_85-MFG       3875.000      2890.000      0        "CAP CER 0.1UF 16V X7R 0805"                                                                             

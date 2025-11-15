@@ -34,7 +34,7 @@ FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
 ConstraintManagerFlow=0
 IsVirtualBomDocumentRemoved=0
-OutputPath=
+OutputPath=Output Job
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -100,6 +100,55 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document4]
+DocumentPath=Master_Screen.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Prj_Master_Screen\Design Rule Check - PCB_Master_Screen.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Output Job\Fabrication\NC Drill\PCB_Master_Screen-RoundHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Output Job\Fabrication\NC Drill\PCB_Master_Screen-SlotHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Output Job\Fabrication\NC Drill\PCB_Master_Screen.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Output Job\Fabrication\Gerber\PCB_Master_Screen.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Output Job\Fabrication\NC Drill\PCB_Master_Screen.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Output Job\Fabrication\Gerber\PCB_Master_Screen.REP
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Output Job\Fabrication\Pick Place\Pick Place for PCB_Master_Screen.txt
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
@@ -109,6 +158,9 @@ Variant=[No Variations]
 OutputJobsCount=0
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
+
+[Generic_EDE]
+OutputDir=Output Job
 
 [OutputGroup1]
 Name=Netlist Outputs
