@@ -2,8 +2,142 @@
 FileName = PCB_Master_Screen.GBR
 AutoAperture = True
 *************************************************************
-Generating : Bottom Layer
-      File : PCB_Master_Screen.GBL
+Generating : Bottom Component Center
+      File : PCB_Master_Screen.GM24
+
+    Adding Layer      : Bottom Component Center
+
+
+Used DCodes :
+    D66
+*************************************************************
+
+*************************************************************
+Generating : Bottom 3D Body
+      File : PCB_Master_Screen.GM23
+
+    Adding Layer      : Bottom 3D Body
+
+
+Used DCodes :
+    D10
+    D66
+*************************************************************
+
+*************************************************************
+Generating : Bottom Courtyard
+      File : PCB_Master_Screen.GM21
+
+    Adding Layer      : Bottom Courtyard
+
+
+Used DCodes :
+    D10
+    D66
+    D67
+*************************************************************
+
+*************************************************************
+Generating : Bottom Assembly
+      File : PCB_Master_Screen.GM20
+
+    Adding Layer      : Bottom Assembly
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Top Component Center
+      File : PCB_Master_Screen.GM16
+
+    Adding Layer      : Top Component Center
+
+
+Used DCodes :
+    D66
+*************************************************************
+
+*************************************************************
+Generating : Top Courtyard
+      File : PCB_Master_Screen.GM15
+
+    Adding Layer      : Top Courtyard
+
+
+Used DCodes :
+    D10
+    D12
+    D66
+    D67
+*************************************************************
+
+*************************************************************
+Generating : Top 3D Body
+      File : PCB_Master_Screen.GM13
+
+    Adding Layer      : Top 3D Body
+
+
+Used DCodes :
+    D10
+    D13
+    D15
+    D64
+    D65
+    D66
+*************************************************************
+
+*************************************************************
+Generating : Top Assembly
+      File : PCB_Master_Screen.GM5
+
+    Adding Layer      : Top Assembly
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Board Outer
+      File : PCB_Master_Screen.GM2
+
+    Adding Layer      : Board Outer
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : PCB_Master_Screen.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D13
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : PCB_Master_Screen.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : PCB_Master_Screen.GBP
+
+    Adding Layer      : Bottom Paste
 
     Adding Layer      : Bottom Layer
 
@@ -12,25 +146,13 @@ Generating : Bottom Layer
 
 Used DCodes :
     D20
-    D40
-    D44
-    D45
-    D52
-    D53
-    D54
-    D55
-    D56
-    D57
-    D58
-    D59
-    D60
-    D61
-    D62
 *************************************************************
 
 *************************************************************
-Generating : Top Layer
-      File : PCB_Master_Screen.GTL
+Generating : Top Paste
+      File : PCB_Master_Screen.GTP
+
+    Adding Layer      : Top Paste
 
     Adding Layer      : Top Layer
 
@@ -38,8 +160,6 @@ Generating : Top Layer
 
 
 Used DCodes :
-    D11
-    D15
     D17
     D18
     D19
@@ -55,37 +175,34 @@ Used DCodes :
     D29
     D30
     D31
-    D32
-    D40
-    D44
-    D45
-    D50
-    D51
-    D52
-    D53
-    D54
-    D55
-    D56
-    D57
-    D58
-    D59
-    D60
-    D61
-    D62
 *************************************************************
 
 *************************************************************
-Generating : Bottom Overlay
-      File : PCB_Master_Screen.GBO
+Generating : Bottom Solder
+      File : PCB_Master_Screen.GBS
 
-    Adding Layer      : Bottom Overlay
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D10
-    D11
-    D14
-    D15
+    D20
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
 *************************************************************
 
 *************************************************************
@@ -132,135 +249,17 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Solder
-      File : PCB_Master_Screen.GBS
+Generating : Bottom Overlay
+      File : PCB_Master_Screen.GBO
 
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D20
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
-    D43
-    D44
-    D45
-    D46
-    D47
-    D48
-    D49
-*************************************************************
-
-*************************************************************
-Generating : Top Paste
-      File : PCB_Master_Screen.GTP
-
-    Adding Layer      : Top Paste
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D17
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-*************************************************************
-
-*************************************************************
-Generating : Bottom Paste
-      File : PCB_Master_Screen.GBP
-
-    Adding Layer      : Bottom Paste
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D20
-*************************************************************
-
-*************************************************************
-Generating : Keep-Out Layer
-      File : PCB_Master_Screen.GKO
-
-    Adding Layer      : Keep-Out Layer
-
-
-Used DCodes :
-    D11
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 1
-      File : PCB_Master_Screen.GM1
-
-    Adding Layer      : Mechanical 1
-
-
-Used DCodes :
-    D13
-*************************************************************
-
-*************************************************************
-Generating : Board Outer
-      File : PCB_Master_Screen.GM2
-
-    Adding Layer      : Board Outer
-
-
-Used DCodes :
-    D11
-*************************************************************
-
-*************************************************************
-Generating : Top Assembly
-      File : PCB_Master_Screen.GM5
-
-    Adding Layer      : Top Assembly
+    Adding Layer      : Bottom Overlay
 
 
 Used DCodes :
     D10
-*************************************************************
-
-*************************************************************
-Generating : Top 3D Body
-      File : PCB_Master_Screen.GM13
-
-    Adding Layer      : Top 3D Body
-
-
-Used DCodes :
-    D10
-    D13
+    D11
+    D14
     D16
-    D63
-    D64
-    D65
 *************************************************************
 
 *************************************************************
@@ -278,53 +277,6 @@ Used DCodes :
     D14
     D15
     D16
-*************************************************************
-
-*************************************************************
-Generating : Top Component Center
-      File : PCB_Master_Screen.GM16
-
-    Adding Layer      : Top Component Center
-
-
-Used DCodes :
-    D65
-*************************************************************
-
-*************************************************************
-Generating : Bottom Assembly
-      File : PCB_Master_Screen.GM20
-
-    Adding Layer      : Bottom Assembly
-
-
-Used DCodes :
-    D10
-*************************************************************
-
-*************************************************************
-Generating : Bottom Component Center
-      File : PCB_Master_Screen.GM24
-
-    Adding Layer      : Bottom Component Center
-
-
-Used DCodes :
-    D65
-*************************************************************
-
-*************************************************************
-Generating : Top Courtyard
-      File : PCB_Master_Screen.GM15
-
-    Adding Layer      : Top Courtyard
-
-
-Used DCodes :
-    D10
-    D12
-    D65
-    D66
 *************************************************************
 
 *************************************************************
@@ -356,7 +308,6 @@ Used DCodes :
     D40
     D44
     D45
-    D52
     D53
     D54
     D55
@@ -364,6 +315,7 @@ Used DCodes :
     D57
     D58
     D59
+    D60
 *************************************************************
 
 *************************************************************
@@ -380,6 +332,76 @@ Used DCodes :
     D40
     D44
     D45
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : PCB_Master_Screen.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D20
+    D40
+    D44
+    D45
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : PCB_Master_Screen.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D40
+    D44
+    D45
+    D50
+    D51
     D52
     D53
     D54
@@ -388,31 +410,10 @@ Used DCodes :
     D57
     D58
     D59
-*************************************************************
-
-*************************************************************
-Generating : Bottom Courtyard
-      File : PCB_Master_Screen.GM21
-
-    Adding Layer      : Bottom Courtyard
-
-
-Used DCodes :
-    D10
-    D65
-    D66
-*************************************************************
-
-*************************************************************
-Generating : Bottom 3D Body
-      File : PCB_Master_Screen.GM23
-
-    Adding Layer      : Bottom 3D Body
-
-
-Used DCodes :
-    D10
-    D65
+    D60
+    D61
+    D62
+    D63
 *************************************************************
 
 *************************************************************
@@ -426,8 +427,8 @@ Generating : Drill Drawing
 
 Used DCodes :
     D13
-    D67
     D68
+    D69
 *************************************************************
 
 *************************************************************
@@ -449,6 +450,6 @@ Generating : Profile
 
 
 Used DCodes :
-    D69
+    D70
 *************************************************************
 

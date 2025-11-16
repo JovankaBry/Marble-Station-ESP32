@@ -118,30 +118,34 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Output Job\Fabrication\NC Drill\PCB_Master_Screen-RoundHoles.TXT
+DocumentPath=Output Job\Design Rule Check - PCB_Master_Screen.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Output Job\Fabrication\NC Drill\PCB_Master_Screen-SlotHoles.TXT
+DocumentPath=Output Job\Fabrication\NC Drill\PCB_Master_Screen-RoundHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Output Job\Fabrication\NC Drill\PCB_Master_Screen.DRR
+DocumentPath=Output Job\Fabrication\NC Drill\PCB_Master_Screen-SlotHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Output Job\Fabrication\Gerber\PCB_Master_Screen.EXTREP
+DocumentPath=Output Job\Fabrication\NC Drill\PCB_Master_Screen.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Output Job\Fabrication\NC Drill\PCB_Master_Screen.LDP
+DocumentPath=Output Job\Fabrication\Gerber\PCB_Master_Screen.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Output Job\Fabrication\Gerber\PCB_Master_Screen.REP
+DocumentPath=Output Job\Fabrication\NC Drill\PCB_Master_Screen.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument7]
+DocumentPath=Output Job\Fabrication\Gerber\PCB_Master_Screen.REP
+DItemRevisionGUID=
+
+[GeneratedDocument8]
 DocumentPath=Output Job\Fabrication\Pick Place\Pick Place for PCB_Master_Screen.txt
 DItemRevisionGUID=
 

@@ -4,9 +4,9 @@ C:\Users\Ruben\Documents\Git\Marble-Station-ESP32\pcb\Altium\Master_Screen\Prj_M
 ========================================================================================================================
 File Design Information:
 
-Date:       15.11.25
-Time:       14:34
-Revision:   3c14dd165904be62189e42cf73e1067e69422caa
+Date:       16.11.25
+Time:       01:15
+Revision:   607fe52db6655f8eefb2f574658836418f3dd37a
 Variant:    No variations
 Units used: mil
 
@@ -33,7 +33,7 @@ SW2        MJTP1212A          TopLayer    FP-MJTP1212A-MFG         3375.000     
 SW1        MJTP1212A          TopLayer    FP-MJTP1212A-MFG         2655.000      984.134       0        "Switch Tactile Button 12x12mm"                                                                          
 R9         330R               TopLayer    FP-RC1206-MFG            2485.000      1860.000      270      "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
 R8         1k                 TopLayer    FP-RC1206-MFG            3455.000      2205.000      0        "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
-R7         100R               TopLayer    FP-RC1206-MFG            3755.000      1910.000      180      "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
+R7         100R               TopLayer    FP-RC1206-MFG            3735.000      1910.000      180      "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
 R6         100k               TopLayer    FP-RC1206-MFG            4055.000      2650.000      0        "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
 R5         1k                 TopLayer    FP-RC1206-MFG            4060.000      2420.000      180      "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
 R4         1k                 TopLayer    FP-RC1206-MFG            4060.000      2530.000      180      "RES SMD 0 OHM JUMPER 1/4W 1206"                                                                         
