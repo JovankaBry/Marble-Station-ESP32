@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\Ruben\Documents\Git\Marble-Station-ESP32\pcb\Altium\DC_Jack_8_Output\Project_Jack_DC\PCB_Power_Jack.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=pcb_power_jack.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Rect_Holes|DrillFile=pcb_power_jack-rectholes.txt|DrillLayers=gtl,gbl

@@ -1,0 +1,22 @@
+Altium Designer Pick and Place Locations
+C:\Users\Ruben\Documents\Git\Marble-Station-ESP32\pcb\Altium\DC_Jack_8_Output\Project_Jack_DC\Project Outputs\Fabrication\Pick Place for PCB_Power_Jack.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       03.11.25
+Time:       23:07
+Revision:   c5edcf737ceba31b44b473f1c0c114c5aefea50c
+Variant:    No variations
+Units used: mil
+
+Designator Comment         Layer    Footprint             Center-X(mil) Center-Y(mil) Rotation Description                                                                                        
+P6         TSW-104-08-G-S  TopLayer SMTC-TSW-104-08-X-S   425.000       270.000       0        "0.025" SQ Post Header, Through-hole, Vertical, -55 to 125 degC, 2.54 mm Pitch, 4-Pin, Male, RoHS" 
+P5         TSW-104-08-G-S  TopLayer SMTC-TSW-104-08-X-S   955.000       510.000       0        "0.025" SQ Post Header, Through-hole, Vertical, -55 to 125 degC, 2.54 mm Pitch, 4-Pin, Male, RoHS" 
+C1         "1000uF 16V"    TopLayer FP-OS-CON-SMT-F10-MFG 975.000       865.000       270      "CAP ALUM POLY 1000UF 20% 16V SMD"                                                                 
+P4         TSW-104-08-G-S  TopLayer SMTC-TSW-104-08-X-S   430.000       510.000       0        "0.025" SQ Post Header, Through-hole, Vertical, -55 to 125 degC, 2.54 mm Pitch, 4-Pin, Male, RoHS" 
+P3         TSW-104-08-G-S  TopLayer SMTC-TSW-104-08-X-S   955.000       265.000       0        "0.025" SQ Post Header, Through-hole, Vertical, -55 to 125 degC, 2.54 mm Pitch, 4-Pin, Male, RoHS" 
+GND        TSW-104-08-G-S  TopLayer SMTC-TSW-104-08-X-S   430.000       385.000       0        "0.025" SQ Post Header, Through-hole, Vertical, -55 to 125 degC, 2.54 mm Pitch, 4-Pin, Male, RoHS" 
++5V0       TSW-104-08-G-S  TopLayer SMTC-TSW-104-08-X-S   955.000       390.000       0        "0.025" SQ Post Header, Through-hole, Vertical, -55 to 125 degC, 2.54 mm Pitch, 4-Pin, Male, RoHS" 
+J1         PJ-002A         TopLayer CUI_PJ-002A           442.480       841.890       90       "2.0 x 6.5 mm, 2.5 A, Horizontal, Through Hole, Dc Power Jack Connector"                           
+C2         "Cer 0.1uF 50V" TopLayer FP-K15H5-MFG          210.000       830.000       270      "CAP CER 0.1UF 50V X7R RADIAL"                                                                     

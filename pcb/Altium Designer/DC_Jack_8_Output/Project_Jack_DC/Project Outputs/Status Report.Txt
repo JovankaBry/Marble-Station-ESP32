@@ -1,0 +1,10 @@
+Output: Generates pick and place files
+Type  : Pick Place
+From  : Variant [[No Variations]] of PCB Document [PCB_Power_Jack.PcbDoc]
+   Generated File[Pick Place for PCB_Power_Jack.txt]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 23:07:43 On 03.11.2025
