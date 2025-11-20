@@ -1,11 +1,11 @@
 [OutputDatabaseLinkFile]
 Version=1.1
 [DatabaseLinks]
-ConnectionString=Provider=MICROSOFT.ACE.OLEDB.12.0;Data Source=C:\Users\Ruben\Documents\Git\Marble-Station-ESP32\pcb\Library\MarbleLib.xlsx;Extended Properties="Excel 8.0;HDR=Yes;IMEX=1"
+ConnectionString=Provider=MICROSOFT.ACE.OLEDB.12.0;Data Source=C:\Users\r.sahetapy\Documents\Git\Marble-Station-ESP32\pcb\Library\MarbleLib.xlsx;Extended Properties="Excel 8.0;HDR=Yes;IMEX=1"
 AddMode=3
 RemoveMode=1
 UpdateMode=2
-ViewMode=0
+ViewMode=1
 LeftQuote=[
 RightQuote=]
 QuoteTableNames=1
@@ -26,6 +26,9 @@ TableName=Components$
 Enabled=True
 UserWhere=0
 UserWhereText=
+BrowserOrder_Sorting=
+BrowserOrder_Grouping=
+BrowserOrder_Visible=Footprint Path0=215|Description0=558|Library Ref0=115|Footprint Ref0=155|Part Number0=104|Library Path0=165|PartID0=104|Value0=116|TempMin0=70|TempMax0=71|Link0=1684
 [FieldMap1]
 Options=FieldName=Components$.Footprint Path|TableNameOnly=Components$|FieldNameOnly=Footprint Path|FieldType=1|ParameterName=[Footprint Path]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
 [FieldMap2]
