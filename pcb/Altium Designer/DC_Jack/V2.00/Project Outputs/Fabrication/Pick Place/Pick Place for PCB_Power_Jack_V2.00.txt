@@ -1,0 +1,37 @@
+Altium Designer Pick and Place Locations
+C:\Users\r.sahetapy\Documents\Git\Marble-Station-ESP32\pcb\Altium Designer\DC_Jack\V2.00\Project Outputs\Fabrication\Pick Place\Pick Place for PCB_Power_Jack_V2.00.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       27.11.25
+Time:       10:50
+Revision:   b50f14bc64e6ddd1028eb7b7d14f83a7b2069ca7
+Variant:    No variations
+Units used: mil
+
+Designator Comment     Layer    Footprint             Center-X(mil) Center-Y(mil) Rotation Description                                                                                  
+J8         1984659     TopLayer CONN_1984659_PXC      1560.000      569.488       90       "6 Position Wire to Board Terminal Block Horizontal with Board 0.138" (3.50mm) Through Hole" 
+J7         1984659     TopLayer CONN_1984659_PXC      340.000       1466.102      270      "6 Position Wire to Board Terminal Block Horizontal with Board 0.138" (3.50mm) Through Hole" 
+C10        100nF       TopLayer CAP0805               1210.000      2290.000      90       "Capacitor 0805"                                                                             
+C9         1000uF      TopLayer FP-OS-CON-SMT-F10-MFG 925.000       1925.000      0        "CAP ALUM POLY 1000UF 20% 16V SMD"                                                           
+J2         1984659     TopLayer CONN_1984659_PXC      1560.000      1478.307      90       "6 Position Wire to Board Terminal Block Horizontal with Board 0.138" (3.50mm) Through Hole" 
+R2         330R        TopLayer RES1206               850.000       1155.000      270      "Resistor 1206"                                                                              
+R1         330R        TopLayer RES1206               1295.000      1150.000      270      "Resistor 1206"                                                                              
+DS2        "Red LED"   TopLayer LUMX-SML-LX1206IC_V   745.000       662.756       180      "LED Red, 65 mW, -40 to 85 degC, 2-Pin SMD, RoHS, Tape and Reel"                             
+DS1        "Red LED"   TopLayer LUMX-SML-LX1206IC_V   1190.000      662.756       180      "LED Red, 65 mW, -40 to 85 degC, 2-Pin SMD, RoHS, Tape and Reel"                             
+C8         100nF       TopLayer FP-C0805C-DG-MFG      715.000       1195.000      90       "CAP CER 10UF 10V X5R 0805"                                                                  
+C7         22uF        TopLayer FP-C0805C-DG-MFG      615.000       1195.000      90       "CAP CER 10UF 10V X5R 0805"                                                                  
+C6         100nF       TopLayer FP-C0805C-DG-MFG      855.000       1480.000      180      "CAP CER 10UF 10V X5R 0805"                                                                  
+C5         10uF        TopLayer FP-C0805C-DG-MFG      855.000       1380.000      180      "CAP CER 10UF 10V X5R 0805"                                                                  
+C4         100nF       TopLayer FP-C0805C-DG-MFG      995.000       1185.000      90       "CAP CER 10UF 10V X5R 0805"                                                                  
+C3         22uF        TopLayer FP-C0805C-DG-MFG      1100.000      1185.000      90       "CAP CER 10UF 10V X5R 0805"                                                                  
+C2         100nF       TopLayer FP-C0805C-DG-MFG      1290.000      1480.000      180      "CAP CER 10UF 10V X5R 0805"                                                                  
+U2         AMS1117-5.0 TopLayer SOT229P700X180-4N     650.000       1455.000      90       "Linearer Spannungsregler, 800 mA, 15 V"                                                     
+J6         1984659     TopLayer CONN_1984659_PXC      340.000       569.488       270      "6 Position Wire to Board Terminal Block Horizontal with Board 0.138" (3.50mm) Through Hole" 
+J5         1984659     TopLayer CONN_1984659_PXC      340.000       2363.898      270      "6 Position Wire to Board Terminal Block Horizontal with Board 0.138" (3.50mm) Through Hole" 
+J4         PJ-002A     TopLayer CUI_PJ-002A           862.480       2366.890      90       "DC Power Connectors Power Jacks 2x5.5mm"                                                    
+J1         1984659     TopLayer CONN_1984659_PXC      1560.000      2364.488      90       "6 Position Wire to Board Terminal Block Horizontal with Board 0.138" (3.50mm) Through Hole" 
+J3         1984659     TopLayer CONN_1984659_PXC      954.488       335.000       0        "6 Position Wire to Board Terminal Block Horizontal with Board 0.138" (3.50mm) Through Hole" 
+C1         10uF        TopLayer FP-C0805C-DG-MFG      1290.000      1380.000      180      "CAP CER 10UF 10V X5R 0805"                                                                  
+U1         AMS1117-3.3 TopLayer SOT229P700X180-4N     1090.000      1455.000      90       "Linearer Spannungsregler, 800 mA, 15 V"                                                     

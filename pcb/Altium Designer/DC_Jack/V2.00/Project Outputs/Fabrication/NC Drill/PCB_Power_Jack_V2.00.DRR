@@ -1,0 +1,18 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: PCB_Power_Jack_V2.00.PcbDoc   27.11.2025  10:50:15
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : PCB_Power_Jack_V2.00.TXT
+ASCII RectHoles File : PCB_Power_Jack_V2.00-RectHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.321mm (13mil)                                           Round             99        PTH        456.74mm (17.98inch)
+T2      1mm (39mil)                                               Rectangle         3         PTH        29.18mm (1.15inch)
+T3      1.194mm (47mil)                                           Round             42        PTH        284.57mm (11.20inch)
+T4      2.5mm (98mil)                                             Round             4         PTH        169.03mm (6.65inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              148
+
+Total Processing Time (hh:mm:ss) : 00:00:00

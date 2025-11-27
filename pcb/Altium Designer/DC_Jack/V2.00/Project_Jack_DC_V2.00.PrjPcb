@@ -83,8 +83,89 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JSXYMVVE
 
+[Document3]
+DocumentPath=DC_Jack_V2.00.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs\Design Rule Check - PCB_Power_Jack_V2.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs\Fabrication\NC Drill\PCB_Power_Jack_V2.00-RectHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs\Fabrication\NC Drill\PCB_Power_Jack_V2.00.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs\Fabrication\Gerber\PCB_Power_Jack_V2.00.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs\Fabrication\Gerber\PCB_Power_Jack_V2.00.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs\Fabrication\Gerber\PCB_Power_Jack_V2.00.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs\Fabrication\Gerber\PCB_Power_Jack_V2.00.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs\Fabrication\Gerber\PCB_Power_Jack_V2.00.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs\Fabrication\Gerber\PCB_Power_Jack_V2.00.GM
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs\Fabrication\Gerber\PCB_Power_Jack_V2.00.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs\Fabrication\Gerber\PCB_Power_Jack_V2.00.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs\Fabrication\Gerber\PCB_Power_Jack_V2.00.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs\Fabrication\Gerber\PCB_Power_Jack_V2.00.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs\Fabrication\NC Drill\PCB_Power_Jack_V2.00.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs\Fabrication\Gerber\PCB_Power_Jack_V2.00.REP
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs\Fabrication\NC Drill\PCB_Power_Jack_V2.00.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs\Fabrication\Pick Place\Pick Place for PCB_Power_Jack_V2.00.txt
 DItemRevisionGUID=
 
 [Configuration1]
