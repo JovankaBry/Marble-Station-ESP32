@@ -8,25 +8,72 @@
 #define TFT_DC   2
 #define TFT_RST  4
 #define TFT_BL   15  // backlight
+#define TFT_MOSI 23
+#define TFT_SCLK 18
+
+// Buttons
+#define LEFT 19
+#define DOWN 14
+#define UP   25
+#define RIGHT 26
+#define OK 27
 
 // Use hardware SPI (MOSI=23, SCLK=18 on ESP32)
-Adafruit_ST7735 tft(TFT_CS, TFT_DC, TFT_RST);
+//Adafruit_ST7735 tft(TFT_CS, TFT_DC, TFT_RST,TFT_MOSI, TFT_SCLK);
 
+SPIClass vspi(VSPI);
+Adafruit_ST7735 tft = Adafruit_ST7735(&vspi, TFT_CS, TFT_DC, TFT_RST);
+
+bool station1selected = true;
+
+//---------------------------------------Functions----------------------------------------------------------------------------------------
+void ReadButtons(){
+  if (digitalRead(LEFT) == LOW)  Serial.println("LEFT");
+  if (digitalRead(DOWN) == LOW)  Serial.println("DOWN");
+  if (digitalRead(UP) == LOW)    Serial.println("UP");
+  if (digitalRead(RIGHT) == LOW) Serial.println("RIGHT");
+  if (digitalRead(OK) == LOW)    Serial.println("OK");
+  delay(50);
+}
+
+void updateMenu(){
+  if(digitalRead(OK) == LOW && station1selected) Serial.println("to station 2");
+  delay(200);
+}
+
+//--------------------------------------Setup------------------------------------------------------------------------------------------------
 void setup() {
-  // Backlight on
+  Serial.begin(115200);
+
+  vspi.begin(TFT_SCLK, -1, TFT_MOSI, TFT_CS);
+
+  pinMode(LEFT, INPUT_PULLUP);
+  pinMode(DOWN, INPUT_PULLUP);
+  pinMode(UP, INPUT_PULLUP);
+  pinMode(RIGHT, INPUT_PULLUP);
+  pinMode(OK, INPUT_PULLUP);
+  
   pinMode(TFT_BL, OUTPUT);
   digitalWrite(TFT_BL, HIGH);
 
   // Init display
-  tft.initR(INITR_BLACKTAB);  // try INITR_GREENTAB if colors look weird
-  tft.fillScreen(ST77XX_BLACK);
+  tft.initR(INITR_GREENTAB);
+  tft.fillScreen(ST77XX_WHITE);
 
-  tft.setTextColor(ST77XX_WHITE);
-  tft.setTextSize(1);          // bigger text
-  tft.setCursor(10, 20);
-  tft.print("Hello World");
+  tft.setRotation(3);
+  tft.drawRect(20,20,120,60, ST77XX_BLACK);
+  tft.setTextSize(2);
+  tft.setTextColor(ST7735_BLACK);
+  tft.setCursor(30,42);
+  tft.print("Station 1");
+
+  tft.drawRect(20, 20, 120, 60, ST77XX_BLUE);  // base box
+  tft.drawRect(19, 19, 122, 62, ST77XX_BLUE);  // +1 px bigger
+  tft.drawRect(18, 18, 124, 64, ST77XX_BLUE);  // +2 px bigger
+
 }
 
 void loop() {
-  // nothing :) screen just shows text
+  ReadButtons();
+  updateMenu();
 }
