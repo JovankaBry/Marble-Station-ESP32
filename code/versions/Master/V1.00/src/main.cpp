@@ -2,6 +2,7 @@
 #include <SPI.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7735.h>
+#include "pages.h"
 
 // Your fixed pins
 #define TFT_CS   5
@@ -25,6 +26,7 @@ SPIClass vspi(VSPI);
 Adafruit_ST7735 tft = Adafruit_ST7735(&vspi, TFT_CS, TFT_DC, TFT_RST);
 
 bool station1selected = true;
+int currentPage = 1;
 
 //---------------------------------------Functions----------------------------------------------------------------------------------------
 void ReadButtons(){
@@ -58,22 +60,56 @@ void setup() {
 
   // Init display
   tft.initR(INITR_GREENTAB);
-  tft.fillScreen(ST77XX_WHITE);
 
-  tft.setRotation(3);
-  tft.drawRect(20,20,120,60, ST77XX_BLACK);
-  tft.setTextSize(2);
-  tft.setTextColor(ST7735_BLACK);
-  tft.setCursor(30,42);
-  tft.print("Station 1");
-
-  tft.drawRect(20, 20, 120, 60, ST77XX_BLUE);  // base box
-  tft.drawRect(19, 19, 122, 62, ST77XX_BLUE);  // +1 px bigger
-  tft.drawRect(18, 18, 124, 64, ST77XX_BLUE);  // +2 px bigger
+  drawStation1Page();
 
 }
 
 void loop() {
-  ReadButtons();
-  updateMenu();
+
+  //Pressing Right Button
+  if (digitalRead(RIGHT) == LOW) {
+    if (currentPage == 1) {
+      currentPage = 2;
+      drawStation2Page();
+      Serial.println("to station 2");
+    } else if (currentPage == 2) {
+      currentPage = 3;
+      drawStation3Page();
+      Serial.println("to station 3");
+    }else if (currentPage == 3){
+      currentPage = 4;
+      drawStation4Page();
+      Serial.println("to station 4");
+    }else {
+      currentPage = 1;
+      drawStation1Page();
+      Serial.println("back to station 1");
+    }
+    delay(150); 
+  }
+
+  //Pressing Left Button
+if (digitalRead(LEFT) == LOW) {
+  if (currentPage == 1) {
+    currentPage = 4;
+    drawStation4Page();
+    Serial.println("to station 4");
+  }
+  else if (currentPage == 4) {
+    currentPage = 3;
+    drawStation3Page();
+    Serial.println("to station 3");
+  }
+  else if (currentPage == 3) {
+    currentPage = 2;
+    drawStation2Page();
+    Serial.println("to station 2");
+  }else{
+    currentPage = 1;
+    drawStation1Page();
+    Serial.println("to station 1");
+  }
+}
+  delay(150);
 }
