@@ -1,1 +1,1 @@
-#Receiver Pin Configuration
+# Receiver Pin Configuration
