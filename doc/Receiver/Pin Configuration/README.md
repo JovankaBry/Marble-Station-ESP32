@@ -13,8 +13,18 @@ We are using `7 servos` , `1 sensors` , `4 DC Motor`
 
 These are the list and the pins for the receiver:
 
-| Component |  GPIO  |
-|----------:|--------|
-|     Servo 1    |       |
-|     2     |     |
-|     3     |       |
+| Component |  GPIO   |
+|----------:|---------|
+|  Servo 1  |    13   |
+|  Servo 2  |    12   |
+|  Servo 3  |    14   |
+|  Servo 4  |    27   |
+|  Servo 5  |    26   |
+|  Servo 6  |    25   |
+|  Servo 7  |    33   |
+|  Motor 1  | 16 & 17 |
+|  Motor 2  | 21 & 22 |
+|  Motor 3  | 32 & 15 |
+|  Motor 4  | 19 & 18 |
+|  Sensor 1 |   34    | 
+
