@@ -3,6 +3,9 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7735.h>
 #include "pages.h"
+#include "BluetoothSerial.h"
+
+
 
 // Your fixed pins
 #define TFT_CS   5
@@ -24,6 +27,8 @@
 
 SPIClass vspi(VSPI);
 Adafruit_ST7735 tft = Adafruit_ST7735(&vspi, TFT_CS, TFT_DC, TFT_RST);
+
+BluetoothSerial SerialBT;
 
 bool station1selected = true;
 int currentPage = 1;
@@ -60,7 +65,8 @@ void setup() {
 
   // Init display
   tft.initR(INITR_GREENTAB);
-
+  SerialBT.begin("MarbleMaster");
+  Serial.println("Bluetooth master starting...");
   drawStation1Page();
 
 }
@@ -86,7 +92,9 @@ void loop() {
       drawStation1Page();
       Serial.println("back to station 1");
     }
-    delay(150); 
+  SerialBT.write((uint8_t)currentPage);
+  SerialBT.flush();
+  delay(150); 
   }
 
   //Pressing Left Button
@@ -111,5 +119,7 @@ if (digitalRead(LEFT) == LOW) {
     Serial.println("to station 1");
   }
 }
-  delay(150);
+SerialBT.write((uint8_t)currentPage);
+SerialBT.flush();
+delay(150);
 }
