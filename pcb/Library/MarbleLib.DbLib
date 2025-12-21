@@ -26,9 +26,6 @@ TableName=Components$
 Enabled=True
 UserWhere=0
 UserWhereText=
-BrowserOrder_Sorting=
-BrowserOrder_Grouping=
-BrowserOrder_Visible=Footprint Path0=233|Description0=558|Library Ref0=115|Footprint Ref0=173|Part Number0=110|Library Path0=209|PartID0=110|Value0=150|TempMin0=70|TempMax0=71|Link0=1684
 [FieldMap1]
 Options=FieldName=Components$.Footprint Path|TableNameOnly=Components$|FieldNameOnly=Footprint Path|FieldType=1|ParameterName=[Footprint Path]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
 [FieldMap2]
