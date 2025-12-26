@@ -83,8 +83,89 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RLSRTBSF
 
+[Document3]
+DocumentPath=Out_Master_Screen_V2.00.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
 DocumentPath=Ouput\Design Rule Check - PCB_Master_Screen_V2.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Ouput\Fabrication\NC Drill\PCB_Master_Screen_V2.00-RoundHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Ouput\Fabrication\NC Drill\PCB_Master_Screen_V2.00-SlotHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Ouput\Fabrication\NC Drill\PCB_Master_Screen_V2.00.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Ouput\Fabrication\Gerber\PCB_Master_Screen_V2.00.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Ouput\Fabrication\Gerber\PCB_Master_Screen_V2.00.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Ouput\Fabrication\Gerber\PCB_Master_Screen_V2.00.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Ouput\Fabrication\Gerber\PCB_Master_Screen_V2.00.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Ouput\Fabrication\Gerber\PCB_Master_Screen_V2.00.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Ouput\Fabrication\Gerber\PCB_Master_Screen_V2.00.GM
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Ouput\Fabrication\Gerber\PCB_Master_Screen_V2.00.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Ouput\Fabrication\Gerber\PCB_Master_Screen_V2.00.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Ouput\Fabrication\Gerber\PCB_Master_Screen_V2.00.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Ouput\Fabrication\Gerber\PCB_Master_Screen_V2.00.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Ouput\Fabrication\NC Drill\PCB_Master_Screen_V2.00.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Ouput\Fabrication\Gerber\PCB_Master_Screen_V2.00.REP
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Ouput\Fabrication\Pick Place\Pick Place for PCB_Master_Screen_V2.00.txt
 DItemRevisionGUID=
 
 [Configuration1]

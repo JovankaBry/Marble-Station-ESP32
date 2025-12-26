@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [PCB_Master_Screen_V2.00.PcbDoc]
+   Generated File[PCB_Master_Screen_V2.00-RoundHoles.TXT]
+   Generated File[PCB_Master_Screen_V2.00-SlotHoles.TXT]
+   Generated File[PCB_Master_Screen_V2.00.LDP]
+   Generated File[PCB_Master_Screen_V2.00.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 21:15:39 On 26.12.2025
