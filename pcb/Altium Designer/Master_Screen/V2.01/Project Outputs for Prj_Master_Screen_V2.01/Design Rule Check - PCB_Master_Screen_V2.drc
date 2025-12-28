@@ -1,13 +1,19 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Ruben\Documents\Git\Marble-Station-ESP32\pcb\Altium Designer\Master_Screen\V2.01\PCB_Master_Screen_V2.01.PcbDoc
 Date     : 28.12.2025
-Time     : 01:33:23
+Time     : 22:32:55
 
 WARNING: Unplated multi-layer pad(s) detected
-   Pad SW1-C(107.657mm,37.853mm) on Multi-Layer on Net GND
    Pad SW1-E(105.157mm,23.353mm) on Multi-Layer on Net GND
+   Pad SW1-C(107.657mm,37.853mm) on Multi-Layer on Net GND
 
 Processing Rule : Clearance Constraint (Gap=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.15mm) (InComponent('J2')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.1mm) (InNetClass('USBC')),(All)
 Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
@@ -20,6 +26,9 @@ Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
 Processing Rule : Width Constraint (Min=0.5mm) (Max=2mm) (Preferred=1.2mm) (InNet('3V3') OR InNet('5V0') OR InNet('VBAT'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.254mm) (Preferred=0.254mm) (InNetClass('USBC'))
 Rule Violations :0
 
 Processing Rule : Width Constraint (Min=0.2mm) (Max=1.5mm) (Preferred=0.254mm) (All)
@@ -37,13 +46,13 @@ Rule Violations :0
 Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Minimum Solder Mask Sliver (Gap=0.05mm) (InComponent('U4')),(All)
-Rule Violations :0
-
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Silk To Solder Mask (Clearance=0.1mm) (HasFootprint('RES1206')),(All)
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.05mm) (InComponent('U4')),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.05mm) (HasFootprint('RES1206')),(All)
 Rule Violations :0
 
 Processing Rule : Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)
