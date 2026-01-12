@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\Ruben\Documents\Git\Marble-Station-ESP32\pcb\Altium Designer\Master_Screen\V2.01\PCB_Master_Screen_V2.01.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=pcb_master_screen_v2.01-roundholes.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=pcb_master_screen_v2.01-slotholes.txt|DrillLayers=gtl,gbl

@@ -104,6 +104,70 @@ DocumentUniqueId=KIECIOSH
 DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Design Rule Check - PCB_Master_Screen_V2.html
 DItemRevisionGUID=
 
+[GeneratedDocument2]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\NC Drill\PCB_Master_Screen_V2.01-RoundHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\NC Drill\PCB_Master_Screen_V2.01-SlotHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\NC Drill\PCB_Master_Screen_V2.01.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\Gerber\PCB_Master_Screen_V2.01.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\Gerber\PCB_Master_Screen_V2.01.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\Gerber\PCB_Master_Screen_V2.01.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\Gerber\PCB_Master_Screen_V2.01.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\Gerber\PCB_Master_Screen_V2.01.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\Gerber\PCB_Master_Screen_V2.01.GM
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\Gerber\PCB_Master_Screen_V2.01.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\Gerber\PCB_Master_Screen_V2.01.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\Gerber\PCB_Master_Screen_V2.01.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\Gerber\PCB_Master_Screen_V2.01.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\NC Drill\PCB_Master_Screen_V2.01.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\Gerber\PCB_Master_Screen_V2.01.REP
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for Prj_Master_Screen_V2.01\Fabrication\Pick Place\Pick Place for PCB_Master_Screen_V2.01.txt
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0

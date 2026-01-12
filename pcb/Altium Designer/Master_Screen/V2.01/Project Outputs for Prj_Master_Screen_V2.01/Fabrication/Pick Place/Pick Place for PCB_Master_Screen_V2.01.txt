@@ -1,0 +1,64 @@
+Altium Designer Pick and Place Locations
+C:\Users\Ruben\Documents\Git\Marble-Station-ESP32\pcb\Altium Designer\Master_Screen\V2.01\Project Outputs for Prj_Master_Screen_V2.01\Fabrication\Pick Place\Pick Place for PCB_Master_Screen_V2.01.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       12.01.26
+Time:       20:15
+Revision:   68136e86ded71083cec0451504b18457c62a5776
+Variant:    No variations
+Units used: mil
+
+Designator Comment             Layer       Footprint             Center-X(mil) Center-Y(mil) Rotation Description                                                                                                
+D2         1N5819HW-7-F        TopLayer    SOD3715X145N          1990.000      410.000       180      "Schottky Diodes & Rectifiers SOD-123"                                                                     
+C22        4.7uF               TopLayer    CAP0805               1170.000      1195.000      180      "Capacitor 0805"                                                                                           
+C21        100nF               TopLayer    CAP0805               1167.598      1105.000      180      "Capacitor 0805"                                                                                           
+D1         1N5819HW-7-F        TopLayer    SOD3715X145N          2410.000      265.000       0        "Schottky Diodes & Rectifiers SOD-123"                                                                     
+U1         ESP32-WROOM-32      TopLayer    MODULE_ESP32-WROOM-32 2170.354      1685.315      0        "Bluetooth, WiFi 802.11b/g/n, Bluetooth v4.2 +EDR, Class 1, 2 and 3 Transceiver Module U.FL Surface Mount" 
+SW3        2-1825910-7         TopLayer    SW_2-1825910-7        4220.000      600.000       90       "Button 6mm x 6mm"                                                                                         
+SW2        2-1825910-7         TopLayer    SW_2-1825910-7        4225.000      1810.000      90       "Button 6mm x 6mm"                                                                                         
+R12        10K                 TopLayer    RES1206               1155.000      1330.000      90       "Resistor 1206"                                                                                            
+R11        10K                 TopLayer    RES1206               960.000       1550.000      90       "Resistor 1206"                                                                                            
+R10        10K                 TopLayer    RES1206               1935.000      675.000       270      "Resistor 1206"                                                                                            
+R9         10K                 TopLayer    RES1206               1605.000      1845.000      180      "Resistor 1206"                                                                                            
+Q2         MMBT3904            TopLayer    TRANS_MMBT3904        1145.000      1565.000      90       "TRANS NPN 40V 0.2A SOT23-3"                                                                               
+Q1         MMBT3904            TopLayer    TRANS_MMBT3904        962.244       1330.000      180      "TRANS NPN 40V 0.2A SOT23-3"                                                                               
+C20        100nF               TopLayer    CAP0805               842.598       595.000       0        "Capacitor 0805"                                                                                           
+C19        47uF                TopLayer    CAP0805               840.000       510.000       0        "Capacitor 0805"                                                                                           
+C18        100nF               TopLayer    CAP0805               1375.000      1975.000      90       "Capacitor 0805"                                                                                           
+C17        22uF                TopLayer    CAP0805               1460.000      1975.000      90       "Capacitor 0805"                                                                                           
+C16        47uF                TopLayer    CAP0805               1545.000      1975.000      90       "Capacitor 0805"                                                                                           
+C15        100nF               TopLayer    CAP0805               1425.000      1700.000      180      "Capacitor 0805"                                                                                           
+R8         10K                 TopLayer    RES1206               1575.000      750.000       180      "Resistor 1206"                                                                                            
+R7         44.2K               TopLayer    RES1206               1575.000      870.000       0        "Resistor 1206"                                                                                            
+R6         6.8K                TopLayer    RES1206               1140.000      1010.000      0        "Resistor 1206"                                                                                            
+R5         100K                TopLayer    RES1206               1025.000      745.000       270      "Resistor 1206"                                                                                            
+R4         1M                  TopLayer    RES1206               3305.000      185.000       90       "Resistor 1206"                                                                                            
+R3         5.1K                TopLayer    RES1206               2585.000      360.000       0        "Resistor 1206"                                                                                            
+R2         5.1K                TopLayer    RES1206               3190.000      365.000       180      "Resistor 1206"                                                                                            
+R1         1K                  TopLayer    RES1206               3640.000      405.000       270      "Resistor 1206"                                                                                            
+L2         10uH                TopLayer    INDPM110100X400N      1620.000      410.000       0        "SMD Inductor 11x10mm"                                                                                     
+C14        10uF                TopLayer    CAP0805               3590.000      582.598       270      "Capacitor 0805"                                                                                           
+C13        100nF               TopLayer    CAP0805               3690.000      580.000       270      "Capacitor 0805"                                                                                           
+C12        10uF                TopLayer    CAP0805               1755.000      155.000       0        "Capacitor 0805"                                                                                           
+C11        10nF                TopLayer    CAP0805               1130.000      705.000       270      "Capacitor 0805"                                                                                           
+C10        0.1nF               TopLayer    CAP0805               1385.000      1065.000      0        "Capacitor 0805"                                                                                           
+C9         6.8nF               TopLayer    CAP0805               1385.000      980.000       0        "Capacitor 0805"                                                                                           
+C8         0.1uF               TopLayer    CAP0805               1130.000      855.000       90       "Capacitor 0805"                                                                                           
+C7         4.7uF               TopLayer    CAP0805               1265.000      470.000       90       "Capacitor 0805"                                                                                           
+C6         1nF                 TopLayer    CAP0805               3175.000      220.000       180      "Capacitor 0805"                                                                                           
+C5         100nF               TopLayer    CAP0805               3175.000      135.000       0        "Capacitor 0805"                                                                                           
+C4         100nF               TopLayer    CAP0805               2030.000      670.000       90       "Capacitor 0805"                                                                                           
+C3         22uF                TopLayer    CAP0805               2135.000      667.598       90       "Capacitor 0805"                                                                                           
+C2         100nF               TopLayer    CAP0805               2165.000      415.000       90       "Capacitor 0805"                                                                                           
+C1         10uF                TopLayer    CAP0805               2255.000      415.000       90       "Capacitor 0805"                                                                                           
+J1         TFT_3.5_INCH        TopLayer    61301411121           1955.000      1175.000      270      "3.5-inch TFT LCD (320 × 480) with ILI9488 driver + XPT2046 resistive touch"                               
+J4         SK12D07VG4          TopLayer    SK12D07VG4            983.740       85.000        0        "Slide Switches - Side Knob"                                                                               
+DS1        "Red LED"           TopLayer    LUMX-SML-LX1206IC_V   4170.000      185.000       0        "LED Red, 65 mW, -40 to 85 degC, 2-Pin SMD, RoHS, Tape and Reel"                                           
+J2         "USB Type C 16P"    TopLayer    GCT_USB4105-GF-A-060  2880.000      193.602       0        "CONN RCP USB2.0 TYP C 16P SMD RA"                                                                         
+U2         AMS1117-3.3         TopLayer    SOT229P700X180-4N     2610.000      545.000       0        "Linearer Spannungsregler, 800 mA, 15 V"                                                                   
+U3         CH340C              TopLayer    SOIC127P600X180-16N   1420.000      1455.000      180      "USB to serial chip"                                                                                       
+U4         MP1484EN-LF         TopLayer    SOIC127P600X170-9N    1305.000      780.000       90       "Buck Switching Regulator IC Positive Adjustable 0.925V 1 Output 3A 8-SOIC (0.154", 3.90mm Width)"         
+J3         "Battery Connector" BottomLayer CONN_A-6373-02A_MOL   530.000       150.000       0        "Connector Header Through Hole 2 position 0.100" (2.54mm)"                                                 
+SW1        EC11E15244G1        TopLayer    EC11E15244G1_AAL      4238.465      1204.842      180      "EC11 Rotary Encoder with Switch"                                                                          
