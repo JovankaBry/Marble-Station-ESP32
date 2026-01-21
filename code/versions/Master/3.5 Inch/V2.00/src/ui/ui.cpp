@@ -12,20 +12,22 @@ void ui_init() {
   tft.setTextColor(TFT_WHITE);
   tft.setTextSize(2);
   tft.setTextFont(2);
-  tft.println("Hello World");
-
+  tft.println("Select Container!");
 }
 
 
-void draw_rect(int32_t x,int32_t y, int32_t w, int32_t h, uint32_t color){
+void draw_rect(int32_t x,int32_t y, int32_t w, int32_t h, uint32_t color,uint8_t thickness){
 
-    tft.drawRect(x, y, w, h, color);
-
+    for (uint8_t i = 0; i < thickness;i++){
+        tft.drawRect(x - i, y - i, w + (i * 2), h + (i * 2), color);
+    }
 }
 
 
 void draw_string(const char *string, int32_t x, int32_t y, uint8_t font){
 
+    tft.setTextColor(TFT_WHITE);
+    tft.setTextSize(2);
+    tft.setTextFont(2);
     tft.drawString(string, x, y, font);
-
 }
