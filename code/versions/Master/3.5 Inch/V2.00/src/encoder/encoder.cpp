@@ -1,27 +1,46 @@
 #include <Arduino.h>
-#include <ESP32Encoder.h>
 #include "encoder.h"
 
-#define ENC_A 32
-#define ENC_B 33
+// encoder pins
+#define ENC_A   32
+#define ENC_B   33
 #define ENC_BTN 25
 
-ESP32Encoder encoder;
+static int lastA = HIGH;
+static int lastBtn = HIGH;
+static uint32_t lastBtnMs = 0;
 
-static int last;
-
-void encoder_init(){
-    encoder.attachHalfQuad(ENC_A, ENC_B);
+void encoderInit() {
+    pinMode(ENC_A, INPUT_PULLUP);
+    pinMode(ENC_B, INPUT_PULLUP);
     pinMode(ENC_BTN, INPUT_PULLUP);
+
+    lastA = digitalRead(ENC_A);
+    lastBtn = digitalRead(ENC_BTN);
 }
 
-int encoder_read(){
-    int now = encoder.getCount();
-    int diff = now -last;
-    last = now;
-    return diff;
+int encoderStep() {
+    int a = digitalRead(ENC_A);
+    int step = 0;
+
+    if (lastA == HIGH && a == LOW) {
+        if (digitalRead(ENC_B) == HIGH)
+            step = +1;
+        else
+            step = -1;
+    }
+
+    lastA = a;
+    return step;  
 }
 
-bool encoder_pressed(){
-    return digitalRead(ENC_BTN) == LOW;
+bool encoderPressed() {
+    int btn = digitalRead(ENC_BTN);
+
+    if (lastBtn == HIGH && btn == LOW){
+        lastBtn = btn;
+        return true;
+    }
+    lastBtn = btn;
+    return false;
 }
