@@ -2,8 +2,10 @@
 #include <TFT_eSPI.h>
 #include "ui/ui.h"
 #include "encoder/encoder.h"
+#include "page/containers.h"
 
 static int sel = 0;
+static bool inMenu = true;
 
 void draw_menu(){
 
@@ -22,16 +24,23 @@ void setup(){
 }
 
 void loop(){
-
-  int move = encoderStep();
-  
-  if (move != 0){
-    sel = !sel;
-    draw_menu();
+  if (inMenu){
+    int move = encoderStep();
+    if (move != 0){
+      sel = !sel;
+      draw_menu();
+    }
   }
 
   if (encoderPressed()){
-
+    if (sel == 0){
+      container1();
+      inMenu = false;
+    }
+    else if (sel == 1)
+    {
+      container2();
+      inMenu = false;
+    }
   }
-
 }
