@@ -6,7 +6,9 @@
 #include "page/containers.h"
 
 static int sel = 0;
-static bool inMenu = true;
+static int c1_sel = 0;
+static int c2_sel = 0;
+static bool activated = false;
 
 enum Page{
   PAGE_MENU,
@@ -38,7 +40,6 @@ void loop(){
 
   int move = encoderStep();
 
-  // ===== HOME MENU =====
   if (currentPage == PAGE_MENU){
     if (move != 0){
       sel = !sel;
@@ -47,20 +48,50 @@ void loop(){
 
     if (encoderPressed()){
       if (sel == 0){
-        container1();
+        container1(c1_sel);
         currentPage = PAGE_CONTAINER1;
       } else {
-        container2();
+        container2(c2_sel);
         currentPage = PAGE_CONTAINER2;
       }
     }
   }
 
-  // ===== CONTAINER PAGES =====
+  // CONTAINER 1
+  else if (currentPage == PAGE_CONTAINER1){
+    if (move != 0){
+      c1_sel = !c1_sel;
+      container1(c1_sel);
+    }
+
+    if(encoderPressed()){
+      if(c1_sel == 1){
+        draw_menu();
+        currentPage= PAGE_MENU;
+      }else{
+        container1(c1_sel);
+      }
+    }
+  }
+  // CONTAINER 2
+  else if (currentPage == PAGE_CONTAINER2){
+    if (move != 0){
+      c2_sel = !c2_sel;
+      container2(c2_sel);
+    }
+  }
+
+  if (encoderPressed()){
+    if(c2_sel == 1){
+      draw_menu();
+      currentPage = PAGE_MENU;
+    }else{
+      container1(c1_sel);
+    }
+  }
+
   else {
-    if (encoderPressed()){
-      // BACK pressed
-      tft.fillScreen(TFT_BLACK);
+    if(encoderPressed()){
       draw_menu();
       currentPage = PAGE_MENU;
     }
