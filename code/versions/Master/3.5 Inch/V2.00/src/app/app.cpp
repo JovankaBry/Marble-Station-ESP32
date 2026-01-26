@@ -16,7 +16,7 @@ enum Page {
   PAGE_CONTAINER1,
   PAGE_CONTAINER2
 };
-
+ 
 static Page currentPage = PAGE_MENU;
 
 static void draw_menu() {
