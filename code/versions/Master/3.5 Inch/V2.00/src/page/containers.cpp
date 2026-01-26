@@ -11,7 +11,7 @@ void back(bool selected){
 
 void activate(bool selected){
     draw_rect(100, 30, 300, 100, selected ? TFT_RED : TFT_WHITE, 5);
-    draw_string("CLOSED", 140,60,4);
+    draw_string("1 Ball", 180,60,4);
 }
 
 void container1(int c1_sel){

@@ -4,6 +4,7 @@
 #include "ui/ui.h"
 #include "encoder/encoder.h"
 #include "page/containers.h"
+#include "ble/ble.h"
 
 
 static int sel   = 0;  
@@ -71,6 +72,9 @@ void app_loop() {
         draw_menu();
         currentPage = PAGE_MENU;
       } else {
+        Serial.println("Realising Container 1");
+        ble_send_release(1);
+        c1_sel = 0;
         container1(c1_sel);
       }
     }

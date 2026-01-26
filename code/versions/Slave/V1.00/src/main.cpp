@@ -12,16 +12,13 @@ void setup() {
 void loop() {
   char cmd = ble_read();
 
-  if (cmd){
-    Serial.print("BT received: ");
-    Serial.println(cmd);
-  }
+  if (cmd == 0) return;
 
-  if (cmd == '1'){
+  Serial.print("BT received: ");
+  Serial.println(cmd);
+
+  if (cmd == '1') {
     Serial.println("OPEN Gate");
-    open_gate(5000);
-  }else{
-    Serial.println("CLOSE Gate");
-    close_gate(5000);
-  }
+    open_gate(500);
+  } 
 }

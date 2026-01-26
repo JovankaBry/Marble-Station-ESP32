@@ -12,9 +12,5 @@ void servo_setup() {
 void open_gate(int32_t t){
     servo.write(0);
     delay(t);
-}
-
-void close_gate(int32_t t){
     servo.write(90);
-    delay(t);
 }

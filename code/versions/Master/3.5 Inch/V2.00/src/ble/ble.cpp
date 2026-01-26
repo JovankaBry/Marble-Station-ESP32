@@ -9,6 +9,12 @@ void ble_setup(){
     bt.connect("Station1");
 }
 
-void ble_send(char c){
-    bt.write(c);
+void ble_send_release(uint8_t containerId){
+    if (!bt.hasClient()) {
+        bt.begin("Master", true);
+        bt.connect("Station1");
+    }
+
+    char cmd = '0' + containerId;
+    bt.write(cmd);
 }
