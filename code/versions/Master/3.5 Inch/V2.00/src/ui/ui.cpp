@@ -4,15 +4,9 @@
 TFT_eSPI tft = TFT_eSPI();
 
 void ui_init() {
-
   tft.init();
   tft.setRotation(1);
   tft.fillScreen(TFT_BLACK);
-  tft.setCursor(0,0);
-  tft.setTextColor(TFT_WHITE);
-  tft.setTextSize(2);
-  tft.setTextFont(2);
-  tft.println("Select Container!");
 }
 
 
