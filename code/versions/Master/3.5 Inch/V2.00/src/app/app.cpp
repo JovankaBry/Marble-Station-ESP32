@@ -9,7 +9,8 @@
 
 static int sel   = 0;  
 static int c1_sel = 0; 
-static int c2_sel = 0; 
+static int c2_sel = 0;
+uint8_t ballcount = 0;
 
 enum Page {
   PAGE_MENU,
@@ -49,7 +50,7 @@ void app_loop() {
     if (encoderPressed()) {
       if (sel == 0) {
         c1_sel = 0;              
-        container1(c1_sel);
+        container1(c1_sel, ballcount);
         currentPage = PAGE_CONTAINER1;
       } else {
         c2_sel = 0;              
@@ -63,19 +64,44 @@ void app_loop() {
   // ===== CONTAINER 1 =====
   if (currentPage == PAGE_CONTAINER1) {
     if (move != 0) {
-      c1_sel = !c1_sel;
-      container1(c1_sel);
+      c1_sel += move;
+
+      if (c1_sel < 0) c1_sel = 4;
+      if (c1_sel > 4) c1_sel = 0;
+      container1(c1_sel, ballcount);
     }
 
     if (encoderPressed()) {
-      if (c1_sel == 1) {         
+      if (c1_sel == 4) {    // Back  
         draw_menu();
         currentPage = PAGE_MENU;
-      } else {
+        return;
+      } 
+
+      if (c1_sel == 1){   // Minus
+        if (ballcount > 0) ballcount--;
+        container1(c1_sel,ballcount);
+        return;
+      }
+      
+      if (c1_sel == 2){
+        container1(c1_sel,ballcount);
+        ble_send_itv(1,ballcount);
+        return;
+      }
+
+      if (c1_sel==3){   //Minus
+        if (ballcount < 4) ballcount++;
+        container1(c1_sel,ballcount);
+        return;
+      }
+      else {    //Releasing 1 Ball
         Serial.println("Realising Container 1");
         ble_send_release(1);
+        delay(150);
+        ballcount = 0;
         c1_sel = 0;
-        container1(c1_sel);
+        return;
       }
     }
     return;
