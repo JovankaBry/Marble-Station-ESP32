@@ -2,6 +2,7 @@
 #include "servo/servo.h"
 #include "BLE/ble.h"
 #include "display/display.h"
+#include "sensors/sensor1.h"
 
 
 
@@ -14,6 +15,15 @@ void setup() {
 }
 
 void loop() {
+
+    if (sensor1_update()) {
+    int count = sensor1_get_count();
+    display_show_number(count);
+
+    Serial.print("Ball count: ");
+    Serial.println(count);
+  }
+
   char cmd = ble_read();
   if (cmd == 0) return;
 

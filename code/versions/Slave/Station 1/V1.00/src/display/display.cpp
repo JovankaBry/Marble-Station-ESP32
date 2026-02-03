@@ -13,6 +13,15 @@
 SPIClass vspi(VSPI);
 Adafruit_ST7735 tft = Adafruit_ST7735(&vspi, TFT_CS, TFT_DC, TFT_RST);
 
+void display_show_number(int value){
+    tft.fillRect(60, 60, 80, 40, ST77XX_WHITE);
+
+    tft.setCursor(60, 60);
+    tft.setTextSize(4);
+    tft.setTextColor(ST77XX_BLACK, ST77XX_WHITE);
+    tft.print(value);
+}
+
 void draw_rect(int32_t x,int32_t y, int32_t w, int32_t h, uint32_t color,uint8_t thickness){
 
     for (uint8_t i = 0; i < thickness;i++){
@@ -23,7 +32,7 @@ void draw_rect(int32_t x,int32_t y, int32_t w, int32_t h, uint32_t color,uint8_t
 void draw_string(int x, int y,int TextSize, const char *text){
     tft.setCursor(x,y);
     tft.setTextSize(TextSize);
-    tft.setTextColor(ST77XX_BLACK);
+    tft.setTextColor(ST77XX_BLACK, ST77XX_WHITE);
     tft.print(text);
 }
 
@@ -34,6 +43,7 @@ void draw_station(){
     draw_rect(20,1,120,35,ST77XX_RED,3);
 
     draw_string(27,10,2, "Station 1");
+    display_show_number(0);
 }
 
 void display_setup(){
@@ -43,3 +53,4 @@ void display_setup(){
     tft.initR(INITR_GREENTAB);
     draw_station();
 }
+
