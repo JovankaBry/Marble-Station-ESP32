@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include "servo/servo.h"
 #include "BLE/ble.h"
+#include "display/display.h"
 
 
 
@@ -8,6 +9,7 @@ void setup() {
   Serial.begin(115200);
   servo_setup();
   ble_setup();
+  display_setup();
   Serial.print("Slave ready");
 }
 
