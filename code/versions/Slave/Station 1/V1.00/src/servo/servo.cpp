@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <Servo.h>
 
-#define SERVO_PIN 19
+#define SERVO_PIN 13
 
 Servo servo;
 
