@@ -3,6 +3,7 @@
 
 Servo myServo;
 
+
 void setup() {
   Serial.begin(115200);
 
@@ -10,10 +11,18 @@ void setup() {
   Serial.println("Servo ready");
 }
 
-void loop() {
-  myServo.write(150);    // move to 90°
-  delay(4000);
+void drop_ball(){
+  
+  myServo.write(100); 
+  delay(2000);
+  
+  myServo.write(15); //Open
+  delay(300);
 
-  myServo.write(90);    // move to 90°
-  delay(150);
+  myServo.write(50); 
+  delay(2000);
+}
+
+void loop() {
+  drop_ball();
 }
