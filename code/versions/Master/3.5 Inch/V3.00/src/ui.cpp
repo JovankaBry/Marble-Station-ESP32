@@ -31,14 +31,25 @@ void draw_menu(){
     tft.fillScreen(TFT_BLACK);
 
     /*============================================== RED =================================================================*/
-    draw_rect(10,10,130,130, (sel== 0) ? TFT_BROWN : TFT_WHITE,5);
+    draw_rect(10,10,130,130, (sel == 0) ? TFT_BROWN : TFT_WHITE,5);
     draw_string("R",50,45,4,3,TFT_RED);
 
+    draw_rect(10,160,130,100, (sel == 1) ? TFT_BROWN : TFT_WHITE,5);
+
     /*============================================== GREEN =================================================================*/
-    draw_rect(170,10,130,130, (sel== 1) ? TFT_MAGENTA : TFT_WHITE,5);
+    draw_rect(170,10,130,130, (sel == 2) ? TFT_MAGENTA : TFT_WHITE,5);
     draw_string("G",205,45,4,3,TFT_GREEN);
 
+    draw_rect(170,160,130,100, (sel == 3) ? TFT_BROWN : TFT_WHITE,5);
+
     /*============================================== BLUE =================================================================*/
-    draw_rect(330,10,130,130, (sel== 2) ? TFT_MAGENTA : TFT_WHITE,5);
+    draw_rect(330,10,130,130, (sel == 4) ? TFT_MAGENTA : TFT_WHITE,5);
     draw_string("B",370,45,4,3,TFT_BLUE);
+
+    draw_rect(330,160,130,100, (sel == 5) ? TFT_BROWN : TFT_WHITE,5);
+
+    /*============================================== AUTO =================================================================*/
+    draw_rect(170,275,130,40, (sel == 6) ? TFT_BROWN : TFT_WHITE,5);
+    draw_string("Auto",210,285,4,1,TFT_WHITE);
+    
 }
