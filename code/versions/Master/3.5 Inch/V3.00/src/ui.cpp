@@ -1,9 +1,10 @@
 #include <Arduino.h>
 #include <TFT_eSPI.h>
+#include "encoder.h"
 
 TFT_eSPI tft = TFT_eSPI();
 
-static int  sel = 0;
+static int  sel = 1;
 
 void ui_init(){
     tft.init();
@@ -31,25 +32,67 @@ void draw_menu(){
     tft.fillScreen(TFT_BLACK);
 
     /*============================================== RED =================================================================*/
-    draw_rect(10,10,130,130, (sel == 0) ? TFT_BROWN : TFT_WHITE,5);
+    draw_rect(10,10,130,130, (sel == 1) ? TFT_BROWN : TFT_WHITE,5);
     draw_string("R",50,45,4,3,TFT_RED);
 
-    draw_rect(10,160,130,100, (sel == 1) ? TFT_BROWN : TFT_WHITE,5);
+    draw_rect(10,160,130,100, (sel == 4) ? TFT_BROWN : TFT_WHITE,5);
 
     /*============================================== GREEN =================================================================*/
-    draw_rect(170,10,130,130, (sel == 2) ? TFT_MAGENTA : TFT_WHITE,5);
+    draw_rect(170,10,130,130, (sel == 2) ? TFT_BROWN : TFT_WHITE,5);
     draw_string("G",205,45,4,3,TFT_GREEN);
 
-    draw_rect(170,160,130,100, (sel == 3) ? TFT_BROWN : TFT_WHITE,5);
+    draw_rect(170,160,130,100, (sel == 5) ? TFT_BROWN : TFT_WHITE,5);
 
     /*============================================== BLUE =================================================================*/
-    draw_rect(330,10,130,130, (sel == 4) ? TFT_MAGENTA : TFT_WHITE,5);
+    draw_rect(330,10,130,130, (sel == 3) ? TFT_BROWN : TFT_WHITE,5);
     draw_string("B",370,45,4,3,TFT_BLUE);
 
-    draw_rect(330,160,130,100, (sel == 5) ? TFT_BROWN : TFT_WHITE,5);
+    draw_rect(330,160,130,100, (sel == 6) ? TFT_BROWN : TFT_WHITE,5);
 
     /*============================================== AUTO =================================================================*/
-    draw_rect(170,275,130,40, (sel == 6) ? TFT_BROWN : TFT_WHITE,5);
+    draw_rect(170,275,130,40, (sel == 7) ? TFT_BROWN : TFT_WHITE,5);
     draw_string("Auto",210,285,4,1,TFT_WHITE);
     
+}
+
+void ui_loop(){
+    int step = encoderStep();
+
+    if (step != 0){
+        sel += step;
+
+        if(sel < 1) sel = 7;
+        if(sel > 7) sel = 1;
+
+        draw_menu();
+    }
+
+    if(encoderPressed()){
+        switch(sel){
+
+            case 1:
+                Serial.println("Case 1");
+                break;
+            
+            case 2:
+                Serial.println("Case 2");
+                break;  
+
+            case 3:
+                Serial.println("Case 3");
+                break;   
+
+            case 4:
+                Serial.println("Case 4");
+                break;
+            
+            case 5:
+                Serial.println("Case 5");
+                break;
+            
+            case 6:
+                Serial.println("Case 6");
+                break;
+        }
+    }
 }

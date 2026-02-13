@@ -3,3 +3,4 @@
 
 void ui_init();
 void draw_menu();
+void ui_loop();
