@@ -3,6 +3,7 @@
 #include "encoder.h"
 
 void setup(){
+  Serial.begin(115200);
   encoderInit();
   ui_init();
   draw_menu();

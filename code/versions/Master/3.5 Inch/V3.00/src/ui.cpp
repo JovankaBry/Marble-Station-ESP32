@@ -93,6 +93,10 @@ void ui_loop(){
             case 6:
                 Serial.println("Case 6");
                 break;
+            
+            case 7:
+                Serial.println("Case 7");
+                break;
         }
     }
 }
