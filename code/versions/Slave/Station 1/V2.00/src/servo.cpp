@@ -11,7 +11,7 @@ void servo_setup(){
 
 void anti_clog(){
     for(int i=0 ; i < 7 ; i++){
-        myServo.write(60);
+        myServo.write(40);
         delay(150);
         myServo.write(180);
         delay(150);
@@ -23,17 +23,14 @@ void drop_ball(){
     myServo.write(60); // Close
     delay(2000);
 
-    myServo.write(40); // Open
+    myServo.write(25); // Open
     delay(500);
     
-    myServo.write(140);
-    delay(300);
+    myServo.write(0); // Push the ball to the left side
+    delay(100);
 
-    myServo.write(70);
-    delay(200);
-
-    myServo.write(110);
-    delay(3000);
+    myServo.write(105); // Drop Ball
+    delay(500);
 
     anti_clog();
 }
