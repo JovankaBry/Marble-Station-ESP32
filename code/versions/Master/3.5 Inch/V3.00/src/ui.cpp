@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <TFT_eSPI.h>
 #include "encoder.h"
+#include "bluetooth.h"
 
 TFT_eSPI tft = TFT_eSPI();
 
@@ -72,14 +73,17 @@ void ui_loop(){
 
             case 1:
                 Serial.println("Case 1");
+                ble_send_1();
                 break;
             
             case 2:
                 Serial.println("Case 2");
+                ble_send_2();
                 break;  
 
             case 3:
                 Serial.println("Case 3");
+                ble_send_3();
                 break;   
 
             case 4:
