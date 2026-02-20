@@ -33,5 +33,7 @@ void drop_ball(){
     delay(500);
 
     anti_clog();
+
+    myServo.write(60);
 }
 

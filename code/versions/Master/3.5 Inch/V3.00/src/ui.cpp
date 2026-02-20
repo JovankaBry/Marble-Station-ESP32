@@ -7,6 +7,10 @@ TFT_eSPI tft = TFT_eSPI();
 
 static int  sel = 1;
 
+static int countR = 0;
+static int countG = 0;
+static int countB = 0;
+
 void ui_init(){
     tft.init();
     tft.setRotation(1);
@@ -37,18 +41,28 @@ void draw_menu(){
     draw_string("R",50,45,4,3,TFT_RED);
 
     draw_rect(10,160,130,100, (sel == 4) ? TFT_BROWN : TFT_WHITE,5);
+    tft.setTextColor(TFT_RED);
+    tft.setTextSize(3);
+    tft.drawString(String(countR), 55, 180);
 
     /*============================================== GREEN =================================================================*/
     draw_rect(170,10,130,130, (sel == 2) ? TFT_BROWN : TFT_WHITE,5);
     draw_string("G",205,45,4,3,TFT_GREEN);
 
     draw_rect(170,160,130,100, (sel == 5) ? TFT_BROWN : TFT_WHITE,5);
+    tft.setTextColor(TFT_GREEN);
+    tft.setTextSize(3);
+    tft.drawString(String(countG), 215, 180);
 
     /*============================================== BLUE =================================================================*/
     draw_rect(330,10,130,130, (sel == 3) ? TFT_BROWN : TFT_WHITE,5);
     draw_string("B",370,45,4,3,TFT_BLUE);
 
     draw_rect(330,160,130,100, (sel == 6) ? TFT_BROWN : TFT_WHITE,5);
+    tft.setTextColor(TFT_BLUE);
+    tft.setTextSize(3);
+    tft.drawString(String(countB), 370, 180);
+
 
     /*============================================== AUTO =================================================================*/
     draw_rect(170,275,130,40, (sel == 7) ? TFT_BROWN : TFT_WHITE,5);
@@ -88,14 +102,32 @@ void ui_loop(){
 
             case 4:
                 Serial.println("Case 4");
+                countR++;
+                if (countR > 3) countR = 0;
+
+                draw_menu();
+                Serial.println("CountR: ");
+                Serial.println(countR);
                 break;
             
             case 5:
                 Serial.println("Case 5");
+                countG++;
+                if (countG > 3) countG = 0;
+
+                draw_menu();
+                Serial.println("CountG: ");
+                Serial.println(countG);
                 break;
             
             case 6:
-                Serial.println("Case 6");
+                Serial.println("Case 5");
+                countB++;
+                if (countB > 3) countB = 0;
+
+                draw_menu();
+                Serial.println("CountB: ");
+                Serial.println(countB);
                 break;
             
             case 7:

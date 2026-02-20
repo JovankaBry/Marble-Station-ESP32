@@ -19,4 +19,9 @@ void loop(){
   Serial.print("BT received: ");
   Serial.println(cmd);
 
+  if (cmd == 'R'){
+    drop_ball();
+    return;
+  }
+
 }

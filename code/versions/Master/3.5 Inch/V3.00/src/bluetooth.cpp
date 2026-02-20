@@ -18,6 +18,7 @@ void ble_send_1(){
     }
 
     bt.write('R');
+    Serial.println("Sending R");
 }
 
 void ble_send_2(){
@@ -27,6 +28,7 @@ void ble_send_2(){
     }
 
     bt.write('G');
+    Serial.println("Sending G");
 }
 
 void ble_send_3(){
@@ -36,4 +38,5 @@ void ble_send_3(){
     }
 
     bt.write('B');
+    Serial.println("Sending B");
 }
