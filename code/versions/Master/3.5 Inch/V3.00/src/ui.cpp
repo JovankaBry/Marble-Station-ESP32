@@ -6,6 +6,7 @@
 TFT_eSPI tft = TFT_eSPI();
 
 static int  sel = 1;
+static bool autoMode = false;
 
 static int countR = 0;
 static int countG = 0;
@@ -65,7 +66,9 @@ void draw_menu(){
 
 
     /*============================================== AUTO =================================================================*/
-    draw_rect(170,275,130,40, (sel == 7) ? TFT_BROWN : TFT_WHITE,5);
+    uint16_t autoColor = autoMode ? TFT_GREEN :
+                     (sel == 7 ? TFT_BROWN : TFT_WHITE);
+    draw_rect(170,275,130,40, autoColor, 5);
     draw_string("Auto",210,285,4,1,TFT_WHITE);
     
 }
@@ -132,6 +135,12 @@ void ui_loop(){
             
             case 7:
                 Serial.println("Case 7");
+                autoMode = !autoMode;
+                draw_menu();
+
+                Serial.println(countR);
+                Serial.println(countG);
+                Serial.println(countB);                                
                 break;
         }
     }
