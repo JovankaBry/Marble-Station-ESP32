@@ -20,20 +20,14 @@ void anti_clog(){
 
 void drop_ball(){
 
-    myServo.write(60); // Close
+    myServo.write(160); // Close
     delay(2000);
 
-    myServo.write(25); // Open
-    delay(500);
-    
-    myServo.write(0); // Push the ball to the left side
-    delay(100);
+    myServo.write(180); // Open
+    delay(250);
 
     myServo.write(105); // Drop Ball
-    delay(500);
+    delay(2000);
 
-    anti_clog();
-
-    myServo.write(60);
 }
 
