@@ -6,7 +6,7 @@ Servo myServo;
 
 void servo_setup(){
     myServo.attach(13);
-    Serial.println("Servo Station 1 Ready");
+    Serial.println("Servo Station 2 Ready");
 }
 
 void anti_clog(){
