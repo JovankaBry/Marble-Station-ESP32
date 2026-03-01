@@ -9,31 +9,15 @@ void servo_setup(){
     Serial.println("Servo Station 1 Ready");
 }
 
-void drop_red(){
-    myServo.write(60);
-    delay(3000);
-}
-
-void drop_green(){
-    myServo.write(30);
-    delay(3000);
-}
-
-void drop_blue(){
-    myServo.write(0);
-    delay(3000);
-}
-
-void drop_close(){
-    myServo.write(90);
-    delay(3000);
-}
-
 void drop_ball(){
 
-    drop_close();
-    drop_red();
-    drop_green();
-    drop_blue();
+    myServo.write(160); // Close
+    delay(2000);
+
+    myServo.write(180); // Open
+    delay(250);
+
+    myServo.write(105); // Drop Ball
+    delay(2000);
 
 }
