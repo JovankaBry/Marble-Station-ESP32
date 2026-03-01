@@ -9,25 +9,31 @@ void servo_setup(){
     Serial.println("Servo Station 1 Ready");
 }
 
-void anti_clog(){
-    for(int i=0 ; i < 7 ; i++){
-        myServo.write(40);
-        delay(150);
-        myServo.write(180);
-        delay(150);
-    }
+void drop_red(){
+    myServo.write(60);
+    delay(3000);
+}
+
+void drop_green(){
+    myServo.write(30);
+    delay(3000);
+}
+
+void drop_blue(){
+    myServo.write(0);
+    delay(3000);
+}
+
+void drop_close(){
+    myServo.write(90);
+    delay(3000);
 }
 
 void drop_ball(){
 
-    myServo.write(160); // Close
-    delay(2000);
-
-    myServo.write(180); // Open
-    delay(250);
-
-    myServo.write(105); // Drop Ball
-    delay(2000);
+    drop_close();
+    drop_red();
+    drop_green();
+    drop_blue();
 
 }
-
