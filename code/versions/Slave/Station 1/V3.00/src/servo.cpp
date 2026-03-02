@@ -30,10 +30,8 @@ void drop_close(){
 }
 
 void drop_ball(){
-
-    drop_close();
-    drop_red();
+   /* drop_red(); 
     drop_green();
     drop_blue();
-
+    drop_close();*/
 }

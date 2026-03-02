@@ -13,7 +13,8 @@ void setup(){
 
 void loop(){
 
-  char cmd = ble_read();
+  drop_ball();
+  /*char cmd = ble_read();
   if (cmd == 0) return;
 
   Serial.print("BT received: ");
@@ -21,6 +22,6 @@ void loop(){
 
   if (cmd == 'R'){
     drop_ball();
-    return;
-  }
+    return; 
+  }*/
 }
