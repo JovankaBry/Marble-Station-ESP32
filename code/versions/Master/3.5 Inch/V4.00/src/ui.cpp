@@ -8,6 +8,9 @@ TFT_eSPI tft = TFT_eSPI();
 static int  sel = 1;
 static bool autoMode = false;
 
+static int autoStep = 0;
+static unsigned long lastAutoTime = 0;
+
 static int countR = 0;
 static int countG = 0;
 static int countB = 0;
@@ -73,6 +76,36 @@ void draw_menu(){
     
 }
 
+// Chat GPT Model 5
+void auto_loop() {
+
+    if (!autoMode) return;
+
+    if (millis() - lastAutoTime < 1000) return; // 1 ball per second
+    lastAutoTime = millis();
+
+    // total steps
+    int total = countR + countG + countB;
+    if (total == 0) return;
+
+    autoStep++;
+    if (autoStep > total) autoStep = 1;
+
+    // decide which color
+    if (autoStep <= countR) {
+        Serial.println("Auto R");
+        ble_send_1();
+    }
+    else if (autoStep <= countR + countG) {
+        Serial.println("Auto G");
+        ble_send_2();
+    }
+    else {
+        Serial.println("Auto B");
+        ble_send_3();
+    }
+}
+
 void ui_loop(){
 
     if (selectPressed()){
@@ -130,13 +163,16 @@ void ui_loop(){
                 break;
             
             case 7:
-                Serial.println("Case 7");
                 autoMode = !autoMode;
-                draw_menu();
 
-                Serial.println(countR);
-                Serial.println(countG);
-                Serial.println(countB);                                
+                if (autoMode) {
+                    autoStep = 0;
+                    Serial.println("AUTO ON");
+                } else {
+                    Serial.println("AUTO OFF");
+                }
+
+                draw_menu();
                 break;
         }
     }

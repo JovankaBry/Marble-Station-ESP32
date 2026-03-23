@@ -4,3 +4,4 @@
 void ui_init();
 void draw_menu();
 void ui_loop();
+void auto_loop();
