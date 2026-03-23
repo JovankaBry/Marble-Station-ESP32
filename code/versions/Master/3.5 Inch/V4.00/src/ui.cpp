@@ -103,7 +103,6 @@ void ui_loop(){
                 break;   
 
             case 4:
-                Serial.println("Case 4");
                 countR++;
                 if (countR > 3) countR = 0;
 
@@ -113,7 +112,6 @@ void ui_loop(){
                 break;
             
             case 5:
-                Serial.println("Case 5");
                 countG++;
                 if (countG > 3) countG = 0;
 
@@ -123,7 +121,6 @@ void ui_loop(){
                 break;
             
             case 6:
-                Serial.println("Case 5");
                 countB++;
                 if (countB > 3) countB = 0;
 
