@@ -15,22 +15,22 @@ void setupServo() {
 }
 
 void servo_1(){
-    servo1.write(90);
-    delay(3000);
     servo1.write(180);
-    delay(3000);
+    delay(500);
+    servo1.write(90);
+    delay(500);
 }
 
 void servo_2(){
-    servo2.write(50);
-    delay(3000);
     servo2.write(140);
-    delay(3000);
+    delay(500);
+    servo2.write(50);
+    delay(500);
 }
 
 void servo_3(){
-    servo3.write(50);
-    delay(3000);
     servo3.write(140);
-    delay(3000);
+    delay(500);    
+    servo3.write(50);
+    delay(500);
 }
