@@ -76,7 +76,11 @@ void draw_menu(){
     
 }
 
-// Chat GPT Model 5
+// Promt: Schreib mir in C einen Code, der eine automatische Ausgabe von Kugeln
+// basierend auf den Werten für CountR, CountG und CountB realisiert.
+// Die Sequenz soll in einer Endlosschleife laufen, bis der Benutzer
+// den Auto-Modus beendet.
+// Modell: GPT-5.0; 23.03.2026
 void auto_loop() {
 
     if (!autoMode) return;
@@ -105,6 +109,8 @@ void auto_loop() {
         ble_send_3();
     }
 }
+
+// Ende der KI-generierten Anweisungsfolge
 
 void ui_loop(){
 
