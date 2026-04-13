@@ -15,12 +15,14 @@ static int countR = 0;
 static int countG = 0;
 static int countB = 0;
 
+// UI setup
 void ui_init(){
     tft.init();
     tft.setRotation(1);
     tft.fillScreen(TFT_BLACK);
 }
 
+// Function to draw a rectangle with a specified thickness
 void draw_rect(int32_t x,int32_t y, int32_t w, int32_t h, uint32_t color,uint8_t thickness){
 
     for (uint8_t i = 0; i < thickness;i++){
@@ -28,7 +30,7 @@ void draw_rect(int32_t x,int32_t y, int32_t w, int32_t h, uint32_t color,uint8_t
     }
 }
 
-
+// Function to draw a string with specified font, size and color
 void draw_string(const char *string, int32_t x, int32_t y, uint8_t font, uint8_t text_size,uint16_t text_colour){
 
     tft.setTextColor(text_colour, TFT_BLACK);
@@ -37,6 +39,7 @@ void draw_string(const char *string, int32_t x, int32_t y, uint8_t font, uint8_t
     tft.drawString(string, x, y, font);
 }
 
+// Function to draw the menu on the TFT display
 void draw_menu(){
     tft.fillScreen(TFT_BLACK);
 
@@ -69,11 +72,13 @@ void draw_menu(){
 
 
     /*============================================== AUTO =================================================================*/
-    uint16_t autoColor = autoMode ? TFT_GREEN :
-                     (sel == 7 ? TFT_BROWN : TFT_WHITE);
-    draw_rect(170,275,130,40, autoColor, 5);
-    draw_string("Auto",210,285,4,1,TFT_WHITE);
-    
+    uint16_t autoColor;
+    if (autoMode)       autoColor = TFT_GREEN;
+    else if (sel == 7)  autoColor = TFT_BROWN;
+    else                autoColor = TFT_WHITE;
+
+    draw_rect(170, 275, 130, 40, autoColor, 5);
+    draw_string("Auto", 210, 285, 4, 1, TFT_WHITE);
 }
 
 // Promt: Schreib mir in C einen Code, der eine automatische Ausgabe von Kugeln
@@ -112,6 +117,7 @@ void auto_loop() {
 
 // Ende der KI-generierten Anweisungsfolge
 
+// Function to handle user input and update the menu accordingly
 void ui_loop(){
 
     if (selectPressed()){
@@ -143,9 +149,9 @@ void ui_loop(){
 
             case 4:
                 countR++;
-                if (countR > 3) countR = 0;
+                if (countR > 3) countR = 0; // Resets count to 0 after reaching 3
 
-                draw_menu();
+                draw_menu();    // Update the menu to reflect the new count
                 Serial.println("CountR: ");
                 Serial.println(countR);
                 break;

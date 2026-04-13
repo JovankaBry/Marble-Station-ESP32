@@ -4,12 +4,14 @@
 
 BluetoothSerial bt;
 
+// Bluetooth setup
 void ble_setup(){
     bt.begin("Master", true);
     bt.connect("Slave");
     delay(300);
 }
 
+// Send "1" to the slave
 void ble_send_1(){
     if(!bt.connected()){
         Serial.println("Connecting...");
@@ -26,6 +28,7 @@ void ble_send_1(){
     }
 }
 
+// Send "2" to the slave
 void ble_send_2(){
     if(!bt.connected()){
         Serial.println("Connecting...");
@@ -43,6 +46,7 @@ void ble_send_2(){
 
 }
 
+// Send "3" to the slave
 void ble_send_3(){
     if (!bt.connected()){
         Serial.println("Connecting...");
@@ -52,7 +56,7 @@ void ble_send_3(){
     }
 
     if (bt.connected()){
-        bt.write('3');
+        bt.write('3'); 
         Serial.println("Sent 3");
     } else {
         Serial.println("Failed to connect");
