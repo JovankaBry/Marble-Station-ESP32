@@ -9,8 +9,8 @@ Servo servo3;
 // Servo setup
 void setupServo() {
     servo1.attach(12); // Attach the servo to GPIO pin 12
-    servo2.attach(13); // Attach the servo to GPIO pin 14
-    servo3.attach(14); // Attach the servo to GPIO pin 27
+    servo2.attach(13); // Attach the servo to GPIO pin 13
+    servo3.attach(14); // Attach the servo to GPIO pin 14
 
     Serial.println("Servos Ready!");
 }
