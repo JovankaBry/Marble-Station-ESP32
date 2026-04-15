@@ -6,6 +6,7 @@ Servo servo1;
 Servo servo2;
 Servo servo3;
 
+// Servo setup
 void setupServo() {
     servo1.attach(12); // Attach the servo to GPIO pin 12
     servo2.attach(13); // Attach the servo to GPIO pin 14

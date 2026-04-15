@@ -12,6 +12,7 @@ void loop() {
     char cmd = ble_read();
     if (cmd == 0) return;
 
+    // Debugging received command from Master
     Serial.print("Received command: ");
     Serial.println(cmd);
 
