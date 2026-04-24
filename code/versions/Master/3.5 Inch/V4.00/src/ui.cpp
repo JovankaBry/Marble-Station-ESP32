@@ -85,7 +85,7 @@ void draw_menu(){
 // basierend auf den Werten für CountR, CountG und CountB realisiert.
 // Die Sequenz soll in einer Endlosschleife laufen, bis der Benutzer
 // den Auto-Modus beendet.
-// Modell: GPT-5.0; 23.03.2026
+// Modell: GPT-5.0; 23.03.2026 [KI 22]
 void auto_loop() {
 
     if (!autoMode) return;
@@ -115,7 +115,7 @@ void auto_loop() {
     }
 }
 
-// Ende der KI-generierten Anweisungsfolge
+// Ende der KI-generierten Anweisungsfolge [KI 22]
 
 // Function to handle user input and update the menu accordingly
 void ui_loop(){
