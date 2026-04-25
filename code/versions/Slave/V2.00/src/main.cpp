@@ -16,6 +16,7 @@ void loop() {
     Serial.print("Received command: ");
     Serial.println(cmd);
 
+    // Control servos based on received command
     if (cmd == '1') {
         servo_1();
     } else if (cmd == '2') {

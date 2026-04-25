@@ -81,10 +81,10 @@ void draw_menu(){
     draw_string("Auto", 210, 285, 4, 1, TFT_WHITE);
 }
 
-// Promt: Schreib mir in C einen Code, der eine automatische Ausgabe von Kugeln
-// basierend auf den Werten für CountR, CountG und CountB realisiert.
-// Die Sequenz soll in einer Endlosschleife laufen, bis der Benutzer
-// den Auto-Modus beendet.
+// Promt: so in master i can choose between 1-3 for each r,g,b static int countR = 0;
+// static int countG = 0; static int countB = 0; so when i click Auto or case 7 it will automartically looping
+// the ball, for instance i chose R = 1 G = 2 B = 1,it will output 1 R 2G 1B forever ultil i press the button again (break the loop=)
+// how do i do that simple
 // Modell: GPT-5.0; 23.03.2026 [KI 22]
 void auto_loop() {
 
